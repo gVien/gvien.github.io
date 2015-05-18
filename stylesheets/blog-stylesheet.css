@@ -1,3 +1,7 @@
+/* May 17th, 2015
+This will no longer be used to style the blog page since it's the same as default.css
+*/
+
 body {
 	background-color: #D7E3E3;
 }
@@ -25,7 +29,7 @@ header {
 }
 
 nav {
-	height: 1000px;
+	/*height: 1000px;*/
 	width: 25%;
 	border: 1px solid gray;
 	background-color: #EEB74D;
@@ -34,7 +38,7 @@ nav {
 }
 
 main {
-	height: 1000px;
+	/*height: 1000px;*/
 	width: 43%;
 	border: 1px solid gray;
 	/*margin-left: 20px;*/
@@ -45,12 +49,12 @@ main {
 }
 
 aside {
-	height: 1000px;
+	/*height: 1000px;*/
 	width: 25%;
 	border: 1px solid gray;
 	/*display: inline-block;*/
 	float: left;
-	margin-left: 3%;
+	margin-left: 2%;
 }
 
 footer {

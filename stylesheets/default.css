@@ -25,7 +25,7 @@ header {
 }
 
 nav {
-	height: 1000px;
+	height: 100%;
 	width: 25%;
 	border: 1px solid gray;
 	background-color: #EEB74D;
@@ -34,18 +34,22 @@ nav {
 }
 
 main {
-	height: 1000px;
+	/*height: 500px;*/
 	width: 43%;
 	border: 1px solid gray;
 	/*margin-left: 20px;*/
 	/*margin-bottom: 400px;*/
 	/*display: inline-block;*/
 	float: left;
-	margin-left: 3%;
+	margin-left: 2%;
+	/*overflow-y: scroll;*/
+	/*more info here
+	https://teamtreehouse.com/forum/when-do-you-use-an-array-versus-a-hash-in-ruby
+	*/
 }
 
 aside {
-	height: 1000px;
+	height: 100%;
 	width: 25%;
 	border: 1px solid gray;
 	/*display: inline-block;*/
@@ -54,13 +58,12 @@ aside {
 }
 
 footer {
-	height: 25px;
+	width:100%;
 	background-color: gray;
 	text-align: center;
 	clear: both;
 	position: relative;
-	bottom:-5px;
-
+	bottom: 0;
 }
 
 img {
@@ -86,3 +89,18 @@ article {
 	font-size: 45px;
 	text-align: left;
 }
+
+pre {
+	white-space: pre-wrap;
+    background: gray;
+    color: orange;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+code { 
+    background: gray;
+    color: orange;
+}
+
