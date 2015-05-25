@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../stylesheets/default.css"/>
-    <title>U1W4: Technical Blog 4: The Cycle Method!</title>
+    <title>U1W4: Cultural Blog 4: A Moving Cell Tower</title>
   </head>
   <body>
     
@@ -32,43 +32,23 @@
     <div class="content">
     </div>-->
     <main class="common">
-        <h1>Technical Blog 4</h1>
-        <h2>The Cycle Method!</h2>
+        <h1>Cultural Blog 4</h1>
+        <h2>A Moving Cell Tower</h2>
         <h4>May 24th, 2015</h4>
         <section>
           <p>
-            This week we dive further into Ruby, solving more problems. The problems were not so bad since I had some experience with solving similar problems in the pass at <a href="http://coderbyte.com">Coderbyte</a>. I got a chance to dig deeper into the method world of Ruby. I am given three choices of <code>enumerable methods</code>(<code>map</code>, <code>group_by</code>, and <code>cycle</code>) to choose from to write about and the method <code>cycle</code> seems to interest me. We will cover that here.
+          This week we are given an assignment to research a technology problem that we are facing in the modern world and give a brief background of it, and then propose a possible solution. The truth is even though I use technology (using a smartphone/computer, driving a car, etc.) everyday to make life easier, I never consider much about a technology problem we are facing until...now.
           </p>
-          <p><img src="../imgs/cycle_method.png" style="width:573px;height: 342px"><br>According to <a href="http://ruby-doc.org/core-2.2.2/Array.html#method-i-cycle">Ruby Docs on Cycle</a> the <code>cycle</code> method calls a block for each element <code>n</code> times or forever if <code>n</code> is not specified.
+          <h3>The Problem</h3>
+          <p>
+          One of our biggest problems we are facing today is getting everyone connected to the internet. As reported by the <a href="http://www.latimes.com/business/technology/la-fi-tn-60-world-population-3-billion-internet-2014-20140507-story.html">LA Times</a> 60% of the world's population was not able to connect to the Internet by the end of last year (2014). Face bought a UK aerospace company, Ascenta to build drones to beam Internet access to the ground. Google started <a href="http://www.google.com/loon/">Project Loon</a> to build Ballon that can provide internet access to the people on the ground. These are great soutions, however I would like to propose another solution!
+          </p>
+          <h3>Proposed Solution</h3>
+          <p>
+          Currently, cellphone (or smartphone) users are able to obtain internet access through cell site or cell tower in various parts of the world. I think in addition to using air-balloons and/or drones, we can build a mobile cell tower (can be a van or truck) on the ground and this mobile cell tower can be moved from location to location. In addition, the mobile cell tower can be interconnected which may help improve its signal strength. I think this solution is cheaper than the drone solution as it does not require as much research and development to build a mobile cell tower. We can also embed the mobile cell tower with driverless technology that many companies such as Google and Tesla are working on.
           </p>
           <p>
-          We can calculate the sum of all numbers using this method. For example:
-          
-          <pre>arr = [1,2,3,4,5,6,7,8,9,10]</pre>
-          <pre>sum = 0  #starting point</pre>
-          <pre>arr.cycle(1){|x| sum = sum + x}</pre>
-          <pre>sum    #=> 55</pre>
-
-          Of course, we can also increase the number of cycles to 2 and this would repeat and we will <code>sum=110</code> as the result. In addition, we are not limited to the addition operator. We can also use other mathematical operation such as multiplication. For instance:
-
-          <pre>arr = [1,2,3,4,5,6,7,8,9,10]</pre>
-          <pre>multiply = 1 #starting point</pre>
-          <pre>arr.cycle(1){|x| multiply = multiply * x}</pre>
-          <pre>multiply    #=> 3628800</pre>          
-          </p>
-          <p>
-          We can also use this method to also join a string.
-
-          <pre>words_arr = ["I", "like", "to", "code", "in", "Ruby"]</pre>
-          <pre>sentence = "" #starting point as empty string</pre>
-          <pre>words_arr.cycle(1){|word| sentence = sentence + " " + word}</pre>
-          <pre>sentence.strip   #=> "I like to code in Ruby"</pre>   
-          The <code>strip</code> method removes the white space before and after the sentence (in this case, before).
-          </p>
-          <p>
-          The possiblity to use the <code>cycle</code> method is endless and what I have described is only a teaser. I hope you enjoy this little session.
-
-          Thank you for reading!
+          Thanks for reading!
           </p>
         </section>
     </main>
