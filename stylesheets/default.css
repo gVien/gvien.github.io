@@ -95,7 +95,7 @@ pre {
     background: gray;
     color: orange;
     width: 100%;
-    text-align: center;
+    /*text-align: center;*/
     margin: auto;
 }
 
@@ -104,3 +104,6 @@ code {
     color: orange;
 }
 
+section {
+	text-align: left;
+}
