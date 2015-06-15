@@ -115,3 +115,28 @@ code {
 section {
 	text-align: left;
 }
+
+table {
+	width: 90%;
+	border-collapse: collapse;
+	text-align: center;
+	margin-left: auto;
+  	margin-right: auto;
+	table-layout: fixed;		/*This evenly space the columns*/
+	/*background-color: #B1F1B9;*/
+
+}
+
+thead {
+	/*width: 50%;*/
+	background-color: #B1F1B9;
+}
+
+tbody {
+	/*width: 100%;*/
+}
+
+td {
+	/*width: 25%;*/
+	word-wrap:break-word;  /* wrap text!! works with table-layout:fixed*/
+}
