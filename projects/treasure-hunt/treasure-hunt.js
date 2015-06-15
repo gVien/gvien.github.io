@@ -26,15 +26,17 @@ var player = {
 
 		if (direction === "right" && canMoveRight && moveLeft>0) {
 			this.x += 2*cellRadius;
+			moveLeft--;
 		} else if (direction === "left" && canMoveLeft && moveLeft>0) {
 			this.x -= 2*cellRadius;
+			moveLeft--;
 		} else if (direction === "up" && canMoveUp && moveLeft>0) {
 			this.y -= 2*cellRadius;
+			moveLeft--;
 		} else if (direction === "down" && canMoveDown && moveLeft>0) {
 			this.y += 2*cellRadius;
+			moveLeft--;
 		}
-
-		moveLeft--;
 
 		console.log(player);
 		movePlayer();			//move player
