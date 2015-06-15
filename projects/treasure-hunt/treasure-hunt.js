@@ -243,6 +243,7 @@ function scoreBoard() {
 //function to use arrow keys to move the player
 function moveKey(e) {
 	e = e || window.event;
+
     switch (e.keyCode) {
         case 38:   // arrow up key
         	keyMove("up",0,2*cellRadius,2*cellRadius,2*cellRadius);
@@ -258,6 +259,14 @@ function moveKey(e) {
             break;
 	}
 }
+
+//prevent the screen from scroll up or down
+//very USEFUL!
+document.addEventListener("keydown", function (e) {
+  if([37,38,39,40].indexOf(e.keyCode) > -1){
+    e.preventDefault();
+  }
+}, false);
 
 window.addEventListener("keydown",moveKey,true);
 
