@@ -119,7 +119,7 @@ var bomb = {
 		var bombsPositionArr = this.bombsPosition();
 		bombsPositionArr.forEach(function(bombsPositions) {
 			var bombImage = new Image();
-            bombImage.src = "avatar/bomb.jpg";
+            bombImage.src = "avatar/bomb.png";
             ctx.drawImage(bombImage, bombsPositions.x, bombsPositions.y,2*cellRadius,2*cellRadius);
 		})
 
@@ -152,7 +152,7 @@ var gold = {
 		var goldPositionArr = this.goldPosition();
 		goldPositionArr.forEach(function(goldPosition) {
 			var goldImage = new Image();
-            goldImage.src = "avatar/gold.jpg";
+            goldImage.src = "avatar/gold.png";
             ctx.drawImage(goldImage, goldPosition.x, goldPosition.y,2*cellRadius,2*cellRadius);
 		})
 		return goldPositionArr;		//this returns the array to be access later
