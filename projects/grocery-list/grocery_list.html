@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Simple Grocery List</title>
+	<style>
+	html, p, li {
+		/*Reset all default values*/
+		margin: 0;
+		padding: 0;
+		border: 0;
+	}
+	p {
+		margin: 5px 0 0 5px;
+		padding: 0 0 0 10px;
+	}
+	input {
+		margin: 0 0 0 15px;
+		padding: 0 5px 0 5px;
+		height: 20px;
+	}
+	#gs {
+		height: 400px;
+		width: 600px;
+		border: 1px solid gray;
+		top: 25%;
+		left: 25%;
+		position: absolute;
+	}
+	</style>
+</head>
+<body>
+	<div id="gs">
+	<p>Enter your grocery item:</p> <input type="text" id="item"> 
+	<button id="btnAdd">ADD</button> <button id="btnRemove">REMOVE</button>   <button id="btnDisplay">DISPLAY LIST</button> <button id="btnPrint">PRINT LIST</button><br><br>
+	<p>Enter the item quantity:</p> <input type="text" id="quantity">
+	<br><br>
+	<p id="display"></p>
+	<p id="error"></p>
+	</div>
+	<script>
+		//Grocery List codes, modified for browser
+		function GroceryList() {
+			var list = [];
+			this.add = function(item, quantity) {
+				list.push([item,quantity])
+			};
+			this.remove = function(item) {
+			    for (var i=0;i<list.length;i++) {
+			        if (list[i][0] === item) {
+				        list.splice(i,1);
+			        }
+			    }
+		    };
+			this.displayList = function() {
+				return list;
+			};
+			this.print = function() {
+				var grocery = "";
+				for (var i=0;i<list.length;i++) {
+					grocery += "<li>Item "+(i+1)+": "+list[i][0]+"/Quantity: "+list[i][1]+"</li>";
+				}
+				return grocery;
+			};
+		}
+		var groceryList = new GroceryList();
+		var list = groceryList.displayList();
+		var item = document.getElementById("item");
+		var quantity = document.getElementById("quantity");
+		document.getElementById("error").style.color = "red";	//set error message to be this color
+		lightBlueBox();
+
+		function lightBlueBox() {
+			item.style.backgroundColor = "lightblue";
+			quantity.style.backgroundColor = "lightblue";
+		}
+
+		function redItemBox() {
+			item.style.backgroundColor = "red";
+		}
+
+		function redQuantityBox() {
+			quantity.style.backgroundColor = "red";
+		}
+
+		document.getElementById("btnAdd").addEventListener("click", function() {
+			if (item.value.length>0 && Number(quantity.value)>0) {	//note that parseInt() function returns NaN for string
+				groceryList.add(item.value,quantity.value);
+				//reset input boxes
+				item.value = "";
+				quantity.value = "";
+				document.getElementById("error").innerHTML = "";
+				lightBlueBox();
+			} else {
+				redItemBox();
+				redQuantityBox()
+				document.getElementById("error").innerHTML = "Error: Please enter an item to add and/or quantity greater than 0!";
+			}
+		});
+
+		document.getElementById("btnRemove").addEventListener("click", function(){
+			for (var i = 0;i<list.length;i++) {
+				if (list[i][0]===item.value && list.length>0) {
+					groceryList.remove(item.value);
+					document.getElementById("error").innerHTML = "item found! removing "+"<span style=\"color:blue\">"+item.value+"</span>" +" from list";
+					item.value = "";
+					lightBlueBox();
+				} else {
+					redItemBox()
+					document.getElementById("error").innerHTML = "Error: Cannot find item "+"<span style=\"color:blue\">"+item.value+"</span> to remove";
+				}
+			}
+		});
+		document.getElementById("btnDisplay").addEventListener("click", function(){
+			if (list.length > 0) {
+				document.getElementById("display").innerHTML = list+"<br>";
+				document.getElementById("error").innerHTML = "";
+				lightBlueBox();
+			} else {
+				document.getElementById("error").innerHTML = "Error: Your grocery list is blank. Add some items";
+			}
+		});
+
+		document.getElementById("btnPrint").addEventListener("click", function(){
+			if (list.length > 0) {
+				document.getElementById("display").innerHTML = "Here are the items you need to buy: "+groceryList.print();
+				document.getElementById("error").innerHTML = "";
+				lightBlueBox();
+			} else {
+				document.getElementById("error").innerHTML = "Error: Your grocery list is blank. Add some items";
+			}
+		})
+	</script>
+</body>
+</html>
