@@ -2,7 +2,7 @@
 layout: page
 title: Welcome to my Page!
 description: About Me page of Gai Vien
-theme: purple
+theme: mainblue
 ---
 
 Hello there, welcome to my page! Thanks for stopping by.
@@ -21,7 +21,7 @@ You can say this is a website that document the journey I go through to become a
 
 
 
-<!-- ### Comments: disqus disabled for now -->
+Comments:
 
 <div id="disqus_thread"></div>
 <script type="text/javascript">
