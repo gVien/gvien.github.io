@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css"/>
+    <title>U1W3: Technical Blog 3: Hash vs. Array!</title>
+  </head>
+  <body>
+    
+    <header class="common">
+      <img src="../imgs/aurora-glacier.png" class="background"/>
+    </header>
+    
+    <div class="middle">
+    <!--This is the menu using HTML semantic, instead of
+    <div class="menu">
+    </div>-->
+    <nav class="common">
+      <p class="name">Gai Vien</p>
+      <img src="../imgs/GV.jpg"/><br>
+      Former Mechanical Engineer. Future Developer.<br>
+      <a href="../index.html">ABOUT ME</a><br><br>
+      <a href="../projects/projects.html"> PROJECT/PORTFOLIO</a><br><br>
+      <a href="use form">CONTACT</a>
+      <p>FOLLOW ME!</p>
+      <a href="https://twitter.com/GaiVien">
+        <img src="../imgs/twitter.png" class="followme"/>
+      </a>
+
+    </nav> 
+
+    <!--This is the main page using HTML semantic, instead of
+    <div class="content">
+    </div>-->
+    <main class="common">
+        <h1>Technical Blog 3</h1>
+        <h2>Hash vs Array</h2>
+        <h4>May 17th, 2015</h4>
+        <section>
+          <p>
+            This week we dive into hash and array in Ruby. Both objects are collections of things such as cars, numbers, etc. However, they are different in many ways. Knowing which one to use to store your data may help you solve problems faster. 
+          </p>
+          <p>Back in your algebra class, you commonly used variable <code>x</code> to store a number after you solve a simple equation such as the one below.
+          <pre>2x+3 = x</pre>
+          <pre>x = -3</pre>
+          <p>
+            Now if you need to store multiple items in a variable, what do you use?
+            You guessed it right! you would use an <code>array</code>
+          </p>
+          <h2>What is an Array in Ruby?</h2>
+          <p>
+            An array is basically a collection of things such as array (yes you can store an array in an array, hash, number, string, boolean, etc.). Whatever you put in an array will come out as it is when you call it in Ruby; it is not display in order. You store a collection in an array between an opening bracket <code>[</code>and a closing bracket <code>]</code>
+            For example: 
+            <pre>An array of number: array = [1,3,5,10]</pre>
+            <pre>An array of string: array = ["one","apple","orange"]</pre>
+            <pre>a multi-dimensional array: array = [1,2,3,[2,5],["love","to","code"]]</pre>
+          </p>
+          <p>Note that the variable <code>array</code> may be any variable such as <code>x</code>
+          </p>
+          <h3>How do we access the element in Array using Ruby?</h3>
+          <p>By definition, each element of an array is associated with an index, starting from 0. See below:
+          <pre>Array: ["banana","apple","orange"]</pre>
+          <pre>Index: [   0    1      2]</pre>
+          </p>
+          <p>
+          We would access the element <code>"banana"</code> by calling the array at index 0. For example:
+          <pre> array[0] => "orange"</pre> or
+          <pre> array[1] => "apple"</pre>
+          </p>
+          <p>
+          In Ruby, there are countless methods (or in layman term, step by step instructions) to manipulate elements in arrays. You call a method on a variable by using the dot <code>.</code>. The variable is the receiver of the method.
+
+          For examples, you can use <code>length</code>method to get the number of elements in an array. Or a more advanced one, <code>select</code> method to filter out any element that you desire. For examples:
+          <pre>Using length method: [2,5,"apple"].length => returns 3</pre>
+          <pre>Using select method: [10,1,2,9].select {|x| x>5} => [10,9]</pre>
+          </p>
+          <p>
+          Of course, in Ruby there are countless fancy methods like the one above. You can learn more about them through here 
+          <a href="http://ruby-doc.org/core-2.2.1/Array.html#">Array Methods</a>.
+          </p>
+          <h2>What is a Hash in Ruby?</h2>
+          <p>
+          Each element of an array is associated with an index number, starting from 0. What if you do not want index of numbers? What if you want to associate each element with other things, such as names of fruits, cars, etc.
+          </p>
+          <p>
+          Hash gives you the ability to do that. Hash is defined by the open braces <code>{</code>and closing braces<code>}</code>. A hash is made up of two component, one is called a <code>key</code>and the others is called a <code>value</code>. This is why they are called <code>key-value</code>pair, much like the "index-value" (I made up this name) pair in array. In Ruby, we define the key first then the value, each separated by the rocket symbol <code>=></code> or in later version 1.9.3 of Ruby you get to replace that with a colon <code>:</code>. These examples below will clarify:
+          <pre>hash1 = {"key1"=>"value1","key2"=>"value2","2":"apple" }</pre>
+          <pre>hash2 = {"1":"one";"2":"two","3":"three"}</pre>
+          </p>
+          <h3>How do we access the element in a hash using Ruby?</h3>
+          <p>
+          Access the hash is pretty much like accessing an element in array. You can think of the key as the "index". For example:
+          <pre>hash1["key1"]  => "value1"</pre>
+          <pre>hash2["2"]     => "two"</pre>
+          </p>
+          <p>
+          You may use the same <code>length</code>method to get the number of elements in the hash above or you can use <code>select</code>method to filter out the key or value that you desire. For more information about methods in hash, visit <a href="http://ruby-doc.org/core-2.2.1/Hash.html#">Hash Methods</a>
+          </p>
+          <h2>So which one should you use?</h2>
+          <p>
+          This is rather an open-ended question since each one has its advantages and disadvantages. It is more practicle to store numbers in an array. If you are defining an object such as a book, you might want to use hash to store its properties such as size, author, title, etc. inside the hash.
+          </p>
+        </section>
+    </main>
+    <!--This is the aside page for blogs using HTML semantic, instead of
+    <div class="blogs">
+    </div>-->
+    
+    <aside class="common">
+      <h1><a href="../index.html">LATEST BLOGS</a></h1>
+      <h3>TECHNICAL</h3>
+      <ul class="blogs">June 19th, 2015
+        <li><a href="../blog/t8-tech.html">Introduction to Active Record</li>
+      </ul>    
+      <ul class="blogs">June 15th, 2015
+        <li><a href="../blog/t7-JavaScript.html">Javascript vs. Ruby</a></li>
+      </ul>
+      <ul class="blogs">June 5th, 2015
+        <li><a href="../blog/t6-oop-concepts.html">Blocks, Procs, and Lambdas</a></li>
+      </ul>
+      <ul class="blogs">May 31st, 2015
+        <li><a href="../blog/t5-ruby-classes.html">Understanding Ruby Classes</a></li>
+      </ul>
+      <ul class="blogs">May 24th, 2015
+        <li><a href="../blog/t4-enumerable-methods.html">The cycle method!</a></li>
+      </ul>
+      <ul class="blogs">May 17th, 2015
+        <li><a href="../blog/t3-arrays-hashes.html">Hash versus Array</a></li>
+      </ul>
+      <ul class="blogs">May 10th, 2015
+        <li><a href="../blog/t2-css-design.html">What is the difference between IDs and Classes</a></li>
+      </ul>
+      <ul class="blogs">May 3rd, 2015
+        <li><a href="../blog/t1-git-blog.html">Using Version Control Git and GitHub to Track Changes</a></li>
+      </ul><br>
+      <h3>CULTURAL</h3>
+      <ul class="blogs">June 19th, 2015
+        <li><a href="../blog/c8-conflict.html">How I would Resolve a Conflict</a></li>
+      </ul>      
+      <ul class="blogs">June 15th, 2015
+        <li><a href="../blog/c7-values.html">Affirmation and Values</a></li>
+      </ul>
+      <ul class="blogs">June 6th, 2015
+        <li><a href="../blog/c6-stereotype-threat.html">Stereotype Threat Advice</a></li>
+      </ul>
+      <ul class="blogs">May 31st, 2015
+        <li><a href="../blog/c5-feedback.html">Pairing and Giving Feedback</a></li>
+      </ul>  
+      <ul class="blogs">May 24th, 2015
+        <li><a href="../blog/c4-tech-issues.html">A Moving Cell Tower</a></li>
+      </ul>
+      <ul class="blogs">May 17th, 2015
+        <li><a href="../blog/c3-thinking-style.html">Thinking Style</a></li>
+      </ul>
+      <ul class="blogs">May 3rd, 2015
+        <li><a href="../blog/c1-chefs-kitchen.html">Phase 0 Week 1: My Experience at DBC</a></li>
+      </ul>
+    </aside>
+    </div>
+    <footer class="common">
+      <p>© 2015 Gai Vien. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html> 

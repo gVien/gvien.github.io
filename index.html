@@ -1,108 +1,169 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="stylesheets/default.css">
-		<title>Welcome!</title>
-	</head>
-	<body>
-		
-		<header class="common">
-			<img src="imgs/aurora-glacier.png" class="background"/>
-		</header>
- 		
- 		<div class="middle">
- 		<!--This is the menu using HTML semantic, instead of
- 		<div class="menu">
-		</div>-->
- 		<nav class="common">
- 			<p class="name">Gai Vien</p>
- 			<img src="imgs/GV.jpg"/><br>
- 			Former Mechanical Engineer. Future Developer.<br>
- 			<a href="index.html">ABOUT ME</a><br><br>
- 			<a href="projects/projects.html"> PROJECT/PORTFOLIO</a><br><br>
- 			<a href="use form">CONTACT</a>
- 			<p>FOLLOW ME!</p>
- 			<a href="https://twitter.com/GaiVien">
- 				<img src="imgs/twitter.png" class="followme"/>
- 			</a>
+---
+layout: master
+title: Home
+description: Welcome to My Page!
+---
 
-		</nav> 
+<div class="container">
 
-		<!--This is the main page using HTML semantic, instead of
- 		<div class="content">
-		</div>-->
-		<main class="common">
-			<article>
-			<p>Hello there, welcome to my page! Thanks for stopping by.</p>
-			<p>
-			I am a former Aerospace/Mechanical Engineer, though I spent many years practicing my Mechanical Engineering credential more than my Aerospace credential. However, I am still a space fan; that's why you see a picture of an aurora happening behind the glacier mountain in the background picture of my header.
-			<p>
-			I left all this behind to become a developer, as I have grown increasingly interest in technology in recent years. I am currently enrolled in Dev Bootcamp for the next several months to study to become a software engineer.
-			<p>
-			You can say this is a website that document the journey I go through to become a developer! Take a look at my blog, projects, or you can connect me on <a href="https://twitter.com/GaiVien">twitter</a> or <a href="https://github.com/gVien">Github!</a>
-			</p>
-			</article>
-		</main>
-
-		<!--This is the aside page for blogs using HTML semantic, instead of
- 		<div class="blogs">
-		</div>-->
-		
-	    <aside class="common">
-	      <h1><a href="index.html">LATEST BLOGS</a></h1>
-	      <h3>TECHNICAL</h3>
-	      <ul class="blogs">June 19th, 2015
-	        <li><a href="blog/t8-tech.html">Introduction to Active Record</li>
-	      </ul>     
-	      <ul class="blogs">June 15th, 2015
-        	<li><a href="blog/t7-JavaScript.html">Javascript vs. Ruby</a></li>
-      	  </ul>
-	      <ul class="blogs">June 5th, 2015
-        	<li><a href="blog/t6-oop-concepts.html">Blocks, Procs, and Lambdas</a></li>
-     	  </ul>
-	      <ul class="blogs">May 31st, 2015
-	        <li><a href="blog/t5-ruby-classes.html">Understanding Ruby Classes</a></li>
-	      </ul>
-	      <ul class="blogs">May 24th, 2015
-	        <li><a href="blog/t4-enumerable-methods.html">The cycle method!</a></li>
-	      </ul>
-	      <ul class="blogs">May 17th, 2015
-	        <li><a href="blog/t3-arrays-hashes.html">Hash versus Array</a></li>
-	      </ul>
-	      <ul class="blogs">May 10th, 2015
-	        <li><a href="blog/t2-css-design.html">What is the difference between IDs and Classes</a></li>
-	      </ul>
-	      <ul class="blogs">May 3rd, 2015
-	        <li><a href="blog/t1-git-blog.html">Using Version Control Git and GitHub to Track Changes</a></li>
-	      </ul><br>
-	      <h3>CULTURAL</h3>
-	      <ul class="blogs">June 19th, 2015
-	        <li><a href="blog/c8-conflict.html">How I would Resolve a Conflict</a></li>
-	      </ul>    
-	      <ul class="blogs">June 15th, 2015
-	        <li><a href="blog/c7-values.html">Affirmation and Values</a></li>
-	      </ul>
-	      <ul class="blogs">June 6th, 2015
-       		 <li><a href="blog/c6-stereotype-threat.html">Stereotype Threat Advice</a></li>
-      	  </ul>
-	      <ul class="blogs">May 31st, 2015
-	        <li><a href="blog/c5-feedback.html">Pairing and Giving Feedback</a></li>
-	      </ul>
-	      <ul class="blogs">May 24th, 2015
-	        <li><a href="blog/c4-tech-issues.html">A Moving Cell Tower</a></li>
-	      </ul>
-	      <ul class="blogs">May 17th, 2015
-	        <li><a href="blog/c3-thinking-style.html">Thinking Style</a></li>
-	      </ul>
-	      <ul class="blogs">May 3rd, 2015
-	        <li><a href="blog/c1-chefs-kitchen.html">Phase 0 Week 1: My Experience at DBC</a></li>
-	      </ul>
-	    </aside>
+	<header class="row">
+	  <div class="col-sm-6 col-md-12" style="margin-top:25px;margin-bottom:25px">
+	    <h1 id="pin">{{site.title}}</h1>
+	    <p class="title" style="color: white; font-size:20px">Former Mechanical Engineer. Future Developer.</p>
+	    <h2 id=""
+	  </div>
+	</header>
+	<nav>
+		<div class="row" style="margin-top:25px">
+ 			<div class="col-md-4 col-sm-6 col-xs-12">
+				<a href="about/">
+					<div class="tile purple profile bord">
+						<h2 class="title">About Me</h2>
+					</div>
+				</a>
+		    </div>
+		    <!-- Resume Tile -->
+			<div class="col-md-2 col-sm-3 col-xs-6">
+				<a href="resume/" title="Resume" class="tile red bord icon-resume"></a>
+			</div>
+			<!-- Project Tile -->
+			<div class="col-md-2 col-sm-3 col-xs-6">
+				<div class="live-tile" data-mode="flip" data-delay="4000">
+					<div>
+						<a href="project/" title="Project" class="tile green bord icon-project"></a>
+					</div>
+					<div>
+						<a href="project/" title="Project" class="tile green bord font-fix">
+						<p>Project Section</p>
+							<ol>
+								<li>Project 1</li>
+								<li>Project 2</li>
+							</ol>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- Blog Tile -->
+			<div class="col-md-2 col-sm-3 col-xs-6">
+				<div class="live-tile" data-mode="flip" data-delay="4000">
+					<div>
+						<a href="blog/" title="Blog" class="tile orange bord icon-blog"></a>
+					</div>
+					<div>
+						<a href="blog/" title="Blog" class="tile orange bord font-fix">
+						<p>Blog Section:</p>
+							<ol>
+								<li>Posts</li>
+								<li>News</li>
+							</ol>
+						</a>
+					</div>
+				</div>
+			</div>
 		</div>
-		<footer class="common">
-			<p>© 2015 Gai Vien. All Rights Reserved.</p>
-		</footer>
-		
-	</body>
-</html>	
+
+		<div class="row">
+
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				{% for post in site.posts offset:1 limit:1 %}
+				<a href="{{post.url}}">
+					<div class="tile green bord">
+						<h3 class="title">Recent Article</h3>
+						<h4 class="title">{{ post.title }}</h4>
+						<p> {{ post.content | strip_html | truncatewords: 10 }}</p>
+					</div>
+				</a>
+				{% endfor %}
+			</div>
+
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				{% for post in site.posts limit:1 %}
+				<a href="{{post.url}}">
+					<div class="tile red bord">
+						<h3 class="title">Latest Article</h3>
+						<h4 class="title">{{ post.title }}</h4>
+						<p> {{ post.content | strip_html | truncatewords: 10 }}</p>
+					</div>
+				</a>
+				{% endfor %}
+			</div>
+
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				{% for post in site.posts %}
+					{% if post.featured == true %}
+					<a href="{{post.url}}">
+						<div class="tile orange bord">
+							<h3 class="title">Featured Article</h3>
+							<h4 class="title">{{ post.title }}</h4>
+							<p> {{ post.content | strip_html | truncatewords: 10 }}</p>
+						</div>
+					</a>
+					{% break %}
+					{% endif %}
+				{% endfor %}
+			</div>
+		</div>
+
+		<!-- Big Tile -->
+		<!-- This is Twitter and LinkedIn Combined Tile -->
+<!-- 		<div class="row" style="margin-bottom:25px">
+			<div data-delay="2000" data-mode="flip" class="live-tile flip ha fix-3">
+			<div class="col-md-2 col-sm-3 col-xs-6 flip-front ha" style="transform: rotateX(180deg); transition: all 500ms ease 0s;">
+				<a class="tile blue bord lk-ico" href="https://www.linkedin.com/pub/gai-vien/38/122/ba8"></a>
+			</div>
+
+			<div class="col-md-2 col-sm-3 col-xs-6 flip-back ha" style="transform: rotateX(360deg); transition: all 500ms ease 0s;">
+				<a class="tile blue bord tw-ico" href="https://twitter.com/gaivien"></a>
+			</div>
+		</div>
+ -->
+ 			<!-- Twitter Icon -->
+			<div class="col-md-2 col-sm-3 col-xs-6">
+				<a href="{{site.twitter}}"  class="tile blue bord tw-ico"></a>
+			</div>
+
+			<!-- LinkedIN -->
+			<div class="col-md-2 col-sm-3 col-xs-6">
+				<a href="{{site.linkedin}}"  class="tile darkblue bord lk-ico"></a>
+			</div>
+
+			<!-- github -->
+			<div class="col-md-2 col-sm-3 col-xs-6">
+				<a href="{{site.github}}"  class="tile black bord gh-ico"></a>
+			</div>
+<!-- FB ICON -->
+<!-- 			<div class="col-md-2 col-sm-3 col-xs-6">
+				<a href="{{site.facebook}}" class="tile blue bord fk-ico"></a>
+			</div>
+ -->
+ 			<!-- RSS feed -->
+			<div class="col-md-2 col-sm-3 col-xs-6">
+				<a href="feed.xml" class="tile purple bord rs-ico"></a>
+			</div>
+
+<!-- 			<div class="col-md-2 col-sm-3 col-xs-6">
+				<a href="{{site.gplus}}" class="tile orange bord gl-ico"></a>
+			</div> -->
+
+			<!-- Mini tile disabled-->
+<!-- 			<div class="col-md-2 col-sm-3 col-xs-6 rside">
+				<div class="row">
+					<div style="padding-left:0px" class="col-md-6 col-sm-6 col-xs-6">
+					    <a href="{{site.linkedin}}" class="mtile blue bord lk-ico-sm"></a>
+					</div>
+					<div style="padding-left:0px" class="col-md-6 col-sm-6 col-xs-6">
+						<a href="{{site.twitter}}"  class="mtile blue bord tw-ico-sm"></a>
+					</div>
+				</div>
+				<div class="row">
+					<div  class="col-md-6 col-sm-6 col-xs-6 rep-1">
+						<a href="{{site.facebook}}" class="mtile purple bord fk-ico-sm"></a>
+					</div>
+					<div  class="col-md-6 col-sm-6 col-xs-6 rep-2">
+						<a href="{{site.gplus}}" class="mtile orange bord gl-ico-sm"></a>
+					</div>
+				</div> -->
+			</div> <!-- End of Mini tile -->
+		</div>
+	</nav>
+</div>

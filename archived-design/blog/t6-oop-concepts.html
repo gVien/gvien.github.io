@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css"/>
+    <title>U2W6: Technical Blog 6: Blocks, Procs, and Lambdas</title>
+  </head>
+  <body>
+    
+    <header class="common">
+      <img src="../imgs/aurora-glacier.png" class="background"/>
+    </header>
+    
+    <div class="middle">
+    <!--This is the menu using HTML semantic, instead of
+    <div class="menu">
+    </div>-->
+    <nav class="common">
+      <p class="name">Gai Vien</p>
+      <img src="../imgs/GV.jpg"/><br>
+      Former Mechanical Engineer. Future Developer.<br>
+      <a href="../index.html">ABOUT ME</a><br><br>
+      <a href="../projects/projects.html"> PROJECT/PORTFOLIO</a><br><br>
+      <a href="use form">CONTACT</a>
+      <p>FOLLOW ME!</p>
+      <a href="https://twitter.com/GaiVien">
+        <img src="../imgs/twitter.png" class="followme"/>
+      </a>
+
+    </nav> 
+
+    <!--This is the main page using HTML semantic, instead of
+    <div class="content">
+    </div>-->
+    <main class="common">
+        <h1>Technical Blog 6</h1>
+        <h2>Blocks, Procs, and Lambdas</h2>
+        <h4>June 5th, 2015</h4>
+        <section>
+          <h3>What are blocks, Procs, and Lambdas in Ruby? </h3>
+          <p>
+            If you have used Ruby build-in methods before then you probably use blocks. Blocks is basically a set of codes inside a method that accepts a block. For examples:
+          </p>
+          <pre>[1,2,3,4,5].map {|x| 2*x}                       #=> [2,4,6,8,10]</pre>
+          <pre>[1,2,3,4,5].reduce do { |sum, element|
+           sum +=element
+           }                                    #=> 15</pre>
+          <p>
+           In the first example, the code <code>2*x</code> is a block inside the map method. It is between the <code>{</code> and <code>}</code>. In the second example, the code <code>sum +=element</code> is a block within the <code>do...end</code> syntax.
+           </p>
+           <p>
+            Keep in mind that blocks are not objects (one of the few exceptions in Ruby!) as they cannot be stored in a variable. In order make it a block, we need to convert it to a Procs or Lambdas which we will get to in a few minutes.
+            </p>
+            <h3>Why do some methods take blocks while others don't?</h3>
+            <p>
+              That's because the methods that take a block use a concept called <code>yield</code> to yield to a block inside the method definition. Let's do an example to demonstrate the <code>yield</code> concept.
+            </p>
+            <pre>def yielding_a_block</pre>
+            <pre> puts "I am a inside a method"</pre>
+            <pre> yield</pre>
+            <pre> puts "I have returned inside the method"</pre>
+            <pre>end</pre>
+            <p>Now let's add a block inside this method and call it!</p>
+            <pre>yielding_a_block {puts "I am a block, surprise?"}</pre>
+            <pre>>></pre>
+            <pre>I am a inside a method</pre>
+            <pre>I am a block, surprise?</pre>
+            <pre>I have returned inside the method</pre>
+            <p>Of course, you can always use a parameter in the method and pass the parameter into yield.</p>
+            <pre>def yielding_a_block_with_para(name)</pre>
+            <pre> puts "I am a inside a method"</pre>
+            <pre> yield(name)</pre>
+            <pre> puts "I have returned inside the method"</pre>
+            <pre>end</pre>
+            <pre> </pre>
+            <pre>yielding_a_block_with_para("Reader") {|para|puts "I am a block with parameter. Are you surprise, #{para}?"}</pre>
+            <pre>>></pre>
+            <pre>I am a inside a method</pre>
+            <pre>I am a block with parameter. Are you surprised, Reader?</pre>
+            <pre>I have returned inside the method</pre>
+            <p>The live codes can be accessed <a href="http://repl.it/rJk">here</a>. Just click "run" and you will see the magic!
+            </p>
+            <h3>Procs and Lambdas are Saved Blocks!</h3>
+            <p>
+              As mentioned earlier, blocks are not objects since they exist inside a method that cannot be saved in a variable. This means we cannot reuse the blocks in other methods (also known as the DRY or Do Not Repeat principle) in our program.
+            </p>
+            <p>
+              So, what are Procs? Procs is basically a "saved" block. There is more to it than that but for now, let's leave it at that. You create a <code>Proc</code> by using <code>Proc.new</code>. Let's redo the <code>map</code> and <code>reduce</code> examples above using Procs. 
+            </p>
+              <pre>times_2 = Proc.new {|x| 2*x}</pre>
+              <pre>[1,2,3,4,5].map(&times_2)                      #=> [2,4,6,8,10]</pre>
+              <pre>[6,7,8,9,10].collect(&times_2)                 #=> [12, 14, 16, 18, 20]</pre>
+              <pre>[6,7,8,9,10].map(&:to_s)                  #=>["6", "7", "8", "9", "10"]</pre>
+              <pre> </pre>
+              <pre>add_all = Proc.new{|total, element| total+=element}</pre>
+              <pre>[1,2,3,4,5].reduce(&add_all)              #=> 15</pre>
+            <p>
+              As you can see the, I inserted the saved Procs (or block) into the map and reduce methods by adding <code>&</code> symbol. In Ruby, the symbol <code>&</code> converts a proc into a block. It can also be used to convert a symbol into procs which was done to convert all the numbers into string above. In addition, as shown in the map and collect methods, the proc was reused. This is one of the advantageous of using a proc to store a block.
+            </p>
+            <p>
+              You can also call the Proc directly by using <code>call</code> method.
+            </p>
+            <pre>hello = Proc.new {|a| puts "I am a saved block inside a Proc!"}</pre>
+            <pre>hello.call</pre>
+            <pre>>>"I am a saved block inside a Proc!"</pre>
+            <p>
+              See how easy it is? you can also played with the live codes <a href="http://repl.it/rK8">here</a>.
+            </p>
+            <p>
+              Let's dive into <code>Lambda</code>. Lambdas are objects, just like Procs! Here is how to define lambda.
+              </p>
+              <pre>lambda_example = lambda { puts "I am inside a lambda"}</pre>
+              <pre>to_string = lambda {|para| para.to_s}</pre>
+              <pre>[6,7,8,9,10].map(&to_string)                #=>["6", "7", "8", "9", "10"]</pre>
+            </p>
+            <p>
+              Lambda works almost identical to Procs. One of the two major differences (besides the syntax) is lambda cares about the number of arguments being passed inside a block, such as <code>para</code> above. If you put in the wrong number of arguments, lambda will give you an <code>ArgumentError</code>. On the other hand, Procs is more easy going and would ignore it and assign a <code>nil</code> to any arguments missing.
+            </p>
+            <p>
+              Another major difference is that when you use <code>return</code> inside a lambda and call it, it will pass the control back to the calling method. If you use <code>return</code> inside a Proc, the return works immediately without passing the control back to the calling method. We can understand this better with two examples.
+            </p>
+            <p>
+            <pre>def proc_calling_method</pre>
+            <pre> proc_call = Proc.new {return "I am a block inside a Proc, call me!"}</pre>
+            <pre> proc_call.call</pre>
+            <pre> puts "Can you see me after pro_calling_method is called?"</pre>
+            <pre>end</pre>
+            <pre>p proc_calling_method</pre>
+            <pre>>>"I am a block inside a Proc, call me!"</pre>
+            <pre> </pre>
+            <pre>def lambda_calling_method</pre>
+            <pre> lambda_call = lambda {return "I am a block inside a lambda, call me!"}</pre>
+            <pre> lambda_call.call</pre>
+            <pre> puts "Can you see me after lambda_calling_method is called?"</pre>
+            <pre>end</pre>
+            <pre>p lambda_calling_method</pre>
+            <pre>>>"Can you see me after lambda_calling_method is called?"</pre>
+            </p>
+            <p>
+              You can view the live codes <a href="http://repl.it/rKn">here</a>. 
+              Hope you learn a lot from reading this. Thanks for reading!
+            </p>
+        </section>
+    </main>
+    <!--This is the aside page for blogs using HTML semantic, instead of
+    <div class="blogs">
+    </div>-->
+
+    <aside class="common">
+      <h1><a href="../index.html">LATEST BLOGS</a></h1>
+      <h3>TECHNICAL</h3>
+      <ul class="blogs">June 19th, 2015
+        <li><a href="../blog/t8-tech.html">Introduction to Active Record</li>
+      </ul>    
+      <ul class="blogs">June 15th, 2015
+        <li><a href="../blog/t7-JavaScript.html">Javascript vs. Ruby</a></li>
+      </ul>
+      <ul class="blogs">June 5th, 2015
+        <li><a href="../blog/t6-oop-concepts.html">Blocks, Procs, and Lambdas</a></li>
+      </ul>
+      <ul class="blogs">May 31st, 2015
+        <li><a href="../blog/t5-ruby-classes.html">Understanding Ruby Classes</a></li>
+      </ul>
+      <ul class="blogs">May 24th, 2015
+        <li><a href="../blog/t4-enumerable-methods.html">The cycle method!</a></li>
+      </ul>
+      <ul class="blogs">May 17th, 2015
+        <li><a href="../blog/t3-arrays-hashes.html">Hash versus Array</a></li>
+      </ul>
+      <ul class="blogs">May 10th, 2015
+        <li><a href="../blog/t2-css-design.html">What is the difference between IDs and Classes</a></li>
+      </ul>
+      <ul class="blogs">May 3rd, 2015
+        <li><a href="../blog/t1-git-blog.html">Using Version Control Git and GitHub to Track Changes</a></li>
+      </ul><br>
+      <h3>CULTURAL</h3>
+      <ul class="blogs">June 19th, 2015
+        <li><a href="../blog/c8-conflict.html">How I would Resolve a Conflict</a></li>
+      </ul>      
+      <ul class="blogs">June 15th, 2015
+        <li><a href="../blog/c7-values.html">Affirmation and Values</a></li>
+      </ul>
+      <ul class="blogs">June 6th, 2015
+        <li><a href="../blog/c6-stereotype-threat.html">Stereotype Threat Advice</a></li>
+      </ul>
+      <ul class="blogs">May 31st, 2015
+        <li><a href="../blog/c5-feedback.html">Pairing and Giving Feedback</a></li>
+      </ul>  
+      <ul class="blogs">May 24th, 2015
+        <li><a href="../blog/c4-tech-issues.html">A Moving Cell Tower</a></li>
+      </ul>
+      <ul class="blogs">May 17th, 2015
+        <li><a href="../blog/c3-thinking-style.html">Thinking Style</a></li>
+      </ul>
+      <ul class="blogs">May 3rd, 2015
+        <li><a href="../blog/c1-chefs-kitchen.html">Phase 0 Week 1: My Experience at DBC</a></li>
+      </ul>
+    </aside>
+    </div>
+    <footer class="common">
+      <p>© 2015 Gai Vien. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html> 
