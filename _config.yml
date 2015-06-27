@@ -1,0 +1,73 @@
+# Configurations
+markdown: kramdown
+markdown_ext:  markdown,mkdown,mkdn,mkd,md
+highlighter: pygments
+
+# Permalinks
+permalink:        /blog/:year/:month/:day/:title
+
+# Setup
+title:            'Gai Vien'
+tagline:          'Welcome to My Page!'
+description:      'My home page'
+url:              'gvien.github.io' #gvien.github.io #http://localhost:4000
+baseurl:          '/blog/'
+
+# Navigation
+navigation:
+- text: About
+  url: /about/
+- text: Resume
+  url: /resume/
+- text: Project
+  url: /project/
+- text: Blog
+  url: /blog/
+- text: Tags
+  url: /tags/
+- text: Archive
+  url : /archive/
+
+
+# Author Details
+author:         'Gai Vien'
+
+#Social Media links
+linkedin:       'https://www.linkedin.com/pub/gai-vien/38/122/ba8'
+twitter:        'https://twitter.com/gaivien'
+github:         'https://github.com/gVien'
+# facebook:       ''
+# gplus:          ''
+
+# Google Analytics
+gahandler: 'UA-52149651-1'
+
+#if footer-links-visible is 'true' the svg-icons will be shown top on the copy right.
+#else the svg icons will not exist
+footersvg: 'true'
+
+# enter link below to activate the footer icons, only enter the suffix of the site, or go change svg-icons.html in svg-icons
+footer-links:
+  dribbble:
+  email: wavetech86@gmail.com
+  facebook:
+  flickr:
+  github: gVien
+  instagram:
+  linkedin: pub/gai-vien/38/122/ba8
+  pinterest:
+  rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
+  google: 
+  twitter: gaivien
+  stackoverflow: 
+
+# Disqus
+disqushandler: 'gvien'
+
+# Blog Configurations
+paginate: 10 # Posts per page on the blog index
+paginate_path: '/blog/page:num'
+destination: ./_site
+
+# Custom vars
+version:          0.8

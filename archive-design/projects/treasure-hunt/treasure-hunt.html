@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../../stylesheets/default.css">
+		<title>Welcome!</title>
+	</head>
+	<body>
+		
+		<header class="common">
+			<img src="../../imgs/aurora-glacier.png" class="background"/>
+		</header>
+ 		
+ 		<div class=middle>
+ 		<!--This is the menu using HTML semantic, instead of
+ 		<div class="menu">
+		</div>-->
+ 		<nav class="common">
+ 			<p class="name">Gai Vien</p>
+ 			<img src="../../imgs/GV.jpg"/><br>
+ 			Former Mechanical Engineer. Future Developer.<br>
+ 			<a href="../../index.html">ABOUT ME</a><br><br>
+ 			<a href="../projects.html"> PROJECT/PORTFOLIO</a><br><br>
+ 			<a href="use form">CONTACT</a>
+ 			<p>FOLLOW ME!</p>
+ 			<a href="https://twitter.com/GaiVien">
+ 				<img src="../../imgs/twitter.png" class="followme"/>
+ 			</a>
+
+		</nav> 
+
+		<!--This is the main page using HTML semantic, instead of
+ 		<div class="content">
+		</div>-->
+		<main class="common">
+				<p style="text-align: left"> 
+				Welcome to Treasure Hunt game! Here is how to play:
+				
+				<ol style="text-align: left">
+					<li>Click "Start/Restart Game" button.</li>
+					<li>Use your keyboard arrows or buttons below to move.</li>
+					<li>Collect all the gold bullions.</li>
+					<li>Avoid those bombs, you only have 100 HP.</li>
+					<li>You only have limited moves, so use it wisely.</li>
+					<li>Some of the gold bullions are behind the bombs -- Sneaky!!</li>
+				</p>
+			<div class="canvas" style="margin: auto">
+				
+				</ol>
+				<button onclick="startOver()" style="display:inline">Start/Restart Game</button><br>
+			 	<canvas id="myCanvas" width="500" height="500" style="border:1px solid #000000; background-color: #B1F1B9"><p>Your browser does not support Canvas. Switch browser! (Maybe try Chrome or Firefox!)</p>
+				</canvas> 
+				
+				<div id="buttons">
+				
+				
+				<button id="left" onclick="player.move('left')" style="display:inline">Left</button>
+				<button id="right" onclick="player.move('right')"; style="display:inline">Right</button>
+				<button id="up" onclick="player.move('up')" style="display:inline">Up</button>
+				<button id="down" onclick="player.move('down')" style="display:inline">Down</button>
+
+				<script src="treasure-hunt.js" type="text/javascript"></script>
+				</div>
+			</div>
+		</main>
+
+		<!--This is the aside page for blogs using HTML semantic, instead of
+ 		<div class="blogs">
+		</div>-->
+		
+	    <aside class="common">
+	      <h1><a href="../../index.html">LATEST BLOGS</a></h1>
+	      <h3>TECHNICAL</h3>
+	      <ul class="blogs">June 19th, 2015
+	        <li><a href="../../blog/t8-tech.html">Introduction to Active Record</li>
+	      </ul> 	      
+	      <ul class="blogs">June 15th, 2015
+        	<li><a href="../../blog/t7-JavaScript.html">Javascript vs. Ruby</a></li>
+      	  </ul>
+	      <ul class="blogs">June 5th, 2015
+        	<li><a href="../../blog/t6-oop-concepts.html">Blocks, Procs, and Lambdas</a></li>
+     	  </ul>
+	      <ul class="blogs">May 31st, 2015
+	        <li><a href="../../blog/t5-ruby-classes.html">Understanding Ruby Classes</a></li>
+	      </ul>
+	      <ul class="blogs">May 24th, 2015
+	        <li><a href="../../blog/t4-enumerable-methods.html">The cycle method!</a></li>
+	      </ul>
+	      <ul class="blogs">May 17th, 2015
+	        <li><a href="../../blog/t3-arrays-hashes.html">Hash versus Array</a></li>
+	      </ul>
+	      <ul class="blogs">May 10th, 2015
+	        <li><a href="../../blog/t2-css-design.html">What is the difference between IDs and Classes</a></li>
+	      </ul>
+	      <ul class="blogs">May 3rd, 2015
+	        <li><a href="../../blog/t1-git-blog.html">Using Version Control Git and GitHub to Track Changes</a></li>
+	      </ul><br>
+	      <h3>CULTURAL</h3>
+	      <ul class="blogs">June 19th, 2015
+	        <li><a href="../../blog/c8-conflict.html">How I would Resolve a Conflict</a></li>
+	      </ul>     	      
+	      <ul class="blogs">June 15th, 2015
+            <li><a href="../../blog/c7-values.html">Affirmation and Values</a></li>
+      	  </ul>
+	      <ul class="blogs">June 6th, 2015
+       		 <li><a href="../../blog/c6-stereotype-threat.html">Stereotype Threat Advice</a></li>
+      	  </ul>
+	      <ul class="blogs">May 31st, 2015
+	        <li><a href="../../blog/c5-feedback.html">Pairing and Giving Feedback</a></li>
+	      </ul>
+	      <ul class="blogs">May 24th, 2015
+	        <li><a href="../../blog/c4-tech-issues.html">A Moving Cell Tower</a></li>
+	      </ul>
+	      <ul class="blogs">May 17th, 2015
+	        <li><a href="../../blog/c3-thinking-style.html">Thinking Style</a></li>
+	      </ul>
+	      <ul class="blogs">May 3rd, 2015
+	        <li><a href="../../blog/c1-chefs-kitchen.html">Phase 0 Week 1: My Experience at DBC</a></li>
+	      </ul>
+	    </aside>
+		</div>
+		<footer class="common">
+			<p>© 2015 Gai Vien. All Rights Reserved.</p>
+		</footer>
+		
+	</body>
+</html>	

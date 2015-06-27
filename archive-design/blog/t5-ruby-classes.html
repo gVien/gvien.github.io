@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css"/>
+    <title>U2W5: Technical Blog 5: Understanding Ruby Classes</title>
+  </head>
+  <body>
+    
+    <header class="common">
+      <img src="../imgs/aurora-glacier.png" class="background"/>
+    </header>
+    
+    <div class="middle">
+    <!--This is the menu using HTML semantic, instead of
+    <div class="menu">
+    </div>-->
+    <nav class="common">
+      <p class="name">Gai Vien</p>
+      <img src="../imgs/GV.jpg"/><br>
+      Former Mechanical Engineer. Future Developer.<br>
+      <a href="../index.html">ABOUT ME</a><br><br>
+      <a href="../projects/projects.html"> PROJECT/PORTFOLIO</a><br><br>
+      <a href="use form">CONTACT</a>
+      <p>FOLLOW ME!</p>
+      <a href="https://twitter.com/GaiVien">
+        <img src="../imgs/twitter.png" class="followme"/>
+      </a>
+
+    </nav> 
+
+    <!--This is the main page using HTML semantic, instead of
+    <div class="content">
+    </div>-->
+    <main class="common">
+        <h1>Technical Blog 5</h1>
+        <h2>Understanding Ruby Classes</h2>
+        <h4>May 31st, 2015</h4>
+        <section>
+          <p>
+            This week we dive further into Ruby classes! Ruby classes are powerful stuff! (other object-oriented languages are powerful too!). It can be used to model so many things in the real world such as a calculator, bingo game, food, etc.
+          </p>
+          <h3>What is a class in Ruby?</h3>
+          <p>
+            Everything in Ruby is an object. An object can be a number, string, array, hash, etc.. Each one of those aformentioned objects falls in a class such as Fixnum class (for integer number), String class (for string object), Array class (for array object), and Hash class (for hash object). Each class has methods that can be used to perform an action on the object (you can picture methods as verbs and objects as nouns). For example, if I have an object <code>"Ruby"</code> which belongs to the class <code>String</code> and this class contains a method called <code>length</code> to ask for the length (or specifically the number of character in the string) of <code>"Ruby"</code>. I would get 4 which is the attribute (or data) that I get from using the method <code>length</code>:<pre>"Ruby".length     #=>4 </pre>
+            which returns the 4.
+          </p>
+          <p>
+            As you can see, the <code>String</code> class contains methods to produce attributes when it is used to perform an action on an object. In general, class is just a way to organize and produce objects with similar attributes and methods.
+          </p>
+          <h3>Ruby Class Examples</h3>
+          <p>
+            Let's make a class <code>Book</code> to show the world how many books you have on your shelf!
+
+            In Ruby, we make a class by first using <code>class</code> and then the name of the class. We end the class by using <code>end</code>. For example:
+            <pre>class Book</pre>
+            <pre>end</pre>
+            Note that the first letter of your class name has to be capitalized. This is the convention in Ruby!
+          </p>
+          <p>
+            Next, we need to initilize all the variables that we need to define this book shelf. In Ruby, there are several variable types. We will discuss two in here for our purpose.
+            </p>
+            <p>
+            The first one is a <code>local variable</code>. This variable is define with a lower case font. For example:
+            <pre>book_type = "horror"</pre>
+            <pre>num = 5</pre><br>
+
+            Class contains many methods and each method contains many local variables. The local variable in a method of a class cannot be accessed by other methods. This is why we need a variable called <code>instance variable</code>.
+            </p>
+            <p>
+            Instance variable is a variable that can be access within a class regardless where the method is (e.g. in a method). The local variable can be converted into an instance variable by adding the symbol <code>@</code> in front of it. For example:
+            <pre>@book_type = "horror"</pre>
+            <pre>@num = 5</pre>
+
+            <p>
+            Now you know about these two variables, we can start initializing our class, which populating our class with variables so we can start our books.
+
+            <pre>class Book</pre>
+            <pre> def initalize(book_count, title, genre)</pre>
+            <pre>   @book_count = book_count</pre>
+            <pre>   @title = title</pre>
+            <pre>   @genre = genre</pre>
+            <pre> end</pre>
+            <pre>end</pre>
+            </p>
+            <p>
+            What can we do with our <code>Book</code> class? we can create a method to check how many books you current have. We can also create a method to add more books in the title. For example:
+
+            <pre>class Book</pre>
+            <pre> def initalize(book_hash, title, genre)</pre>
+            <pre>   @book_hash = book_hash</pre>
+            <pre>   @title = title</pre>
+            <pre>   @genre = genre</pre>
+            <pre>   @book_count = 0</pre>
+            <pre> end</pre>
+            <pre> </pre>
+            <pre> def count_book</pre>
+            <pre>   @book_count</pre>
+            <pre> end</pre>
+            <pre> </pre>
+            <pre> def add(title)</pre>
+            <pre>   #you can add more books into the @book_hash here  </pre>
+            <pre> end</pre>
+            <pre> </pre>
+            <pre> def remove(title)</pre>
+            <pre>   #you can remove a book from @book_hash that you remove from your book  </pre>
+            <pre> end</pre>
+            <pre>end</pre>
+            </p>
+            <p>
+            As you can see as we do a lot of things within our book class here. The possibility is endless.
+            </p>
+
+        </section>
+    </main>
+    <!--This is the aside page for blogs using HTML semantic, instead of
+    <div class="blogs">
+    </div>-->
+    
+     <aside class="common">
+      <h1><a href="../index.html">LATEST BLOGS</a></h1>
+      <h3>TECHNICAL</h3>
+      <ul class="blogs">June 19th, 2015
+        <li><a href="../blog/t8-tech.html">Introduction to Active Record</li>
+      </ul>    
+      <ul class="blogs">June 15th, 2015
+        <li><a href="../blog/t7-JavaScript.html">Javascript vs. Ruby</a></li>
+      </ul>
+      <ul class="blogs">June 5th, 2015
+        <li><a href="../blog/t6-oop-concepts.html">Blocks, Procs, and Lambdas</a></li>
+      </ul>
+      <ul class="blogs">May 31st, 2015
+        <li><a href="../blog/t5-ruby-classes.html">Understanding Ruby Classes</a></li>
+      </ul>
+      <ul class="blogs">May 24th, 2015
+        <li><a href="../blog/t4-enumerable-methods.html">The cycle method!</a></li>
+      </ul>
+      <ul class="blogs">May 17th, 2015
+        <li><a href="../blog/t3-arrays-hashes.html">Hash versus Array</a></li>
+      </ul>
+      <ul class="blogs">May 10th, 2015
+        <li><a href="../blog/t2-css-design.html">What is the difference between IDs and Classes</a></li>
+      </ul>
+      <ul class="blogs">May 3rd, 2015
+        <li><a href="../blog/t1-git-blog.html">Using Version Control Git and GitHub to Track Changes</a></li>
+      </ul><br>
+      <h3>CULTURAL</h3>
+      <ul class="blogs">June 19th, 2015
+        <li><a href="../blog/c8-conflict.html">How I would Resolve a Conflict</a></li>
+      </ul>      
+      <ul class="blogs">June 15th, 2015
+        <li><a href="../blog/c7-values.html">Affirmation and Values</a></li>
+      </ul>
+      <ul class="blogs">June 6th, 2015
+        <li><a href="../blog/c6-stereotype-threat.html">Stereotype Threat Advice</a></li>
+      </ul>
+      <ul class="blogs">May 31st, 2015
+        <li><a href="../blog/c5-feedback.html">Pairing and Giving Feedback</a></li>
+      </ul>  
+      <ul class="blogs">May 24th, 2015
+        <li><a href="../blog/c4-tech-issues.html">A Moving Cell Tower</a></li>
+      </ul>
+      <ul class="blogs">May 17th, 2015
+        <li><a href="../blog/c3-thinking-style.html">Thinking Style</a></li>
+      </ul>
+      <ul class="blogs">May 3rd, 2015
+        <li><a href="../blog/c1-chefs-kitchen.html">Phase 0 Week 1: My Experience at DBC</a></li>
+      </ul>
+    </aside>
+    </div>
+    <footer class="common">
+      <p>© 2015 Gai Vien. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html> 

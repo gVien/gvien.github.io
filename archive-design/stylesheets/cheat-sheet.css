@@ -1,0 +1,29 @@
+#wrapper {
+  background-color: lightblue;
+}
+
+header {
+  text-align: center;
+  background-color: green;
+}
+
+h2 {
+  background-color: gray;
+  display: inline-block;
+  padding: 1%;
+}
+
+.column-1 {
+ margin-left: 5%;
+}
+
+summary {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+details {
+  margin: 2%;
+  font-size: 18px
+}
+
