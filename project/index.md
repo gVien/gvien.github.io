@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Project
-description: Resume of Gai Vien
+description: Project of Gai Vien
 theme: green
 ---
 

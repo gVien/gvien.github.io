@@ -10,6 +10,7 @@ permalink:        /blog/:year/:month/:day/:title
 title:            'Gai Vien'
 tagline:          'Welcome to My Page!'
 description:      'My home page'
+# There is no need for the url below otherwise the CSS files will not be linked correctly
 url:              '' #gvien.github.io #http://localhost:4000
 baseurl:          ''
 
