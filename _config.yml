@@ -10,8 +10,8 @@ permalink:        /blog/:year/:month/:day/:title
 title:            'Gai Vien'
 tagline:          'Welcome to My Page!'
 description:      'My home page'
-url:              'gvien.github.io' #gvien.github.io #http://localhost:4000
-baseurl:          '/blog'
+url:              '' #gvien.github.io #http://localhost:4000
+baseurl:          ''
 
 # Navigation
 navigation:
