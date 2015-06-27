@@ -18,7 +18,7 @@ description: Welcome to My Page!
  			<div class="col-md-4 col-sm-6 col-xs-12">
  				
 				<a href="about/">
-					<div class="tile purple profile bord">
+					<div class="tile mainblue profile bord">
 						<h2 class="title">About Me</h2>
 						<p>Hello there, welcome to my page! Thanks for stopping by.
 							I am a former Aerospace/Mechanical Engineer, though...</p>
@@ -122,7 +122,10 @@ description: Welcome to My Page!
 			</div>
 		</div>
  -->
- 			<!-- Twitter Icon -->
+ 		<!-- Big tile below -->
+ 		<!-- Twitter Icon -->
+ 		<!-- row css is under bootstrap.css -->
+ 		<div class="row" style="margin-bottom:25px">
 			<div class="col-md-2 col-sm-3 col-xs-6">
 				<a href="{{site.twitter}}"  class="tile blue bord tw-ico"></a>
 			</div>
@@ -145,30 +148,31 @@ description: Welcome to My Page!
 			<div class="col-md-2 col-sm-3 col-xs-6">
 				<a href="feed.xml" class="tile purple bord rs-ico"></a>
 			</div>
-
+		</div>
 <!-- 			<div class="col-md-2 col-sm-3 col-xs-6">
 				<a href="{{site.gplus}}" class="tile orange bord gl-ico"></a>
 			</div> -->
-
-			<!-- Mini tile disabled-->
-<!-- 			<div class="col-md-2 col-sm-3 col-xs-6 rside">
-				<div class="row">
-					<div style="padding-left:0px" class="col-md-6 col-sm-6 col-xs-6">
-					    <a href="{{site.linkedin}}" class="mtile blue bord lk-ico-sm"></a>
+<script>/* temporary comment all, delete this to go back to it
+			<!-- Mini tile disabled  original: "col-md-2 col-sm-3 col-xs-6 rside"-->
+			<div class="col-md-2 col-sm-3 col-xs-6"><!--original: class="col-md-2 col-sm-3 col-xs-6 rside"-->
+				<div class="row" style="display: inline-block; position: relative">
+					<div style="padding-left:0px" class="col-md-6 col-sm-6 col-xs-6"><!--original: class="col-md-6 col-sm-6 col-xs-6"-->
+					    <a href="{{site.github}}" class="mtile black bord gh-ico-sm"></a>
 					</div>
 					<div style="padding-left:0px" class="col-md-6 col-sm-6 col-xs-6">
-						<a href="{{site.twitter}}"  class="mtile blue bord tw-ico-sm"></a>
+						<a href="{{site.linkedin}}"  class="mtile darkblue bord lk-ico-sm"></a>
 					</div>
+				<!-- </div> -->
+				<!-- <div class="row"> -->
+					<div style="padding-left:0px" class="col-md-6 col-sm-6 col-xs-6"><!--original: class="col-md-6 col-sm-6 col-xs-6 rep-1"-->
+						<a href="{{site.twitter}}" class="mtile blue bord tw-ico-sm"></a>
+					</div>
+					<div style="padding-left:0px" class="col-md-6 col-sm-6 col-xs-6"><!--original: class="col-md-6 col-sm-6 col-xs-6 rep-2"-->
+						<a href="feed.xml" class="mtile purple bord rs-ico-sm"></a>
+					</div>
+				<!-- </div> -->
 				</div>
-				<div class="row">
-					<div  class="col-md-6 col-sm-6 col-xs-6 rep-1">
-						<a href="{{site.facebook}}" class="mtile purple bord fk-ico-sm"></a>
-					</div>
-					<div  class="col-md-6 col-sm-6 col-xs-6 rep-2">
-						<a href="{{site.gplus}}" class="mtile orange bord gl-ico-sm"></a>
-					</div>
-				</div> -->
-			</div> <!-- End of Mini tile -->
+			</div> <!-- End of Mini tile --></script>
 		</div>
 	</nav>
 </div>

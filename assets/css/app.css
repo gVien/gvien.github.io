@@ -61,7 +61,7 @@
   margin-top: 0px;
 }
 
-.purple, .blue, .red, .orange, .green {
+.purple, .blue, .red, .orange, .green, .mainblue {
     color: #fff;
 }
 
@@ -93,6 +93,11 @@
 /*github color*/
 .black {
     background: #000000;
+}
+
+/*additional color*/
+.mainblue {
+    background: #466DFF;
 }
 
 .left-nav {
