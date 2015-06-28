@@ -1,0 +1,130 @@
+---
+layout: page
+title: Grocery List
+description: Grocery List Using Javascript
+theme: green
+---
+
+Create your own grocery list!
+
+<div id="gs" style="height: 400px; width: 600px; border: 1px solid gray; margin-top: 20px">
+<p style="margin: 5px 0 0 5px; padding: 0 0 0 10px">Enter your grocery item:</p> <input type="text" id="item" style="margin: 0 0 0 15px; padding: 0 5px 0 5px;height: 20px"> 
+<button id="btnAdd">ADD</button> <button id="btnRemove">REMOVE</button>   <button id="btnDisplay">DISPLAY LIST</button> <button id="btnPrint">PRINT LIST</button><br><br>
+<p style="margin: 5px 0 0 5px; padding: 0 0 0 10px">Enter the item quantity:</p> <input type="text" id="quantity" style="margin: 0 0 0 15px; padding: 0 5px 0 5px;height: 20px">
+<br><br>
+<p id="display" style="margin: 5px 0 0 5px; padding: 0 0 0 10px"></p>
+<p id="error" style="margin: 5px 0 0 5px; padding: 0 0 0 10px"></p>
+</div>
+<script>
+	//Grocery List codes, modified for browser
+	function GroceryList() {
+		var list = [];
+		this.add = function(item, quantity) {
+			list.push([item,quantity])
+		};
+		this.remove = function(item) {
+		    for (var i=0;i<list.length;i++) {
+		        if (list[i][0] === item) {
+			        list.splice(i,1);
+		        }
+		    }
+	    };
+		this.displayList = function() {
+			return list;
+		};
+		this.print = function() {
+			var grocery = "";
+			for (var i=0;i<list.length;i++) {
+				grocery += "<li>Item "+(i+1)+": "+list[i][0]+"/Quantity: "+list[i][1]+"</li>";
+			}
+			return grocery;
+		};
+	}
+	var groceryList = new GroceryList();
+	var list = groceryList.displayList();
+	var item = document.getElementById("item");
+	var quantity = document.getElementById("quantity");
+	document.getElementById("error").style.color = "red";	//set error message to be this color
+	lightBlueBox();
+
+	function lightBlueBox() {
+		item.style.backgroundColor = "lightblue";
+		quantity.style.backgroundColor = "lightblue";
+	}
+
+	function redItemBox() {
+		item.style.backgroundColor = "red";
+	}
+
+	function redQuantityBox() {
+		quantity.style.backgroundColor = "red";
+	}
+
+	document.getElementById("btnAdd").addEventListener("click", function() {
+		if (item.value.length>0 && Number(quantity.value)>0) {	//note that parseInt() function returns NaN for string
+			groceryList.add(item.value,quantity.value);
+			//reset input boxes
+			item.value = "";
+			quantity.value = "";
+			document.getElementById("error").innerHTML = "";
+			lightBlueBox();
+		} else {
+			redItemBox();
+			redQuantityBox()
+			document.getElementById("error").innerHTML = "Error: Please enter an item to add and/or quantity greater than 0!";
+		}
+	});
+
+	document.getElementById("btnRemove").addEventListener("click", function(){
+		for (var i = 0;i<list.length;i++) {
+			if (list[i][0]===item.value && list.length>0) {
+				groceryList.remove(item.value);
+				document.getElementById("error").innerHTML = "item found! removing "+"<span style=\"color:blue\">"+item.value+"</span>" +" from list";
+				item.value = "";
+				lightBlueBox();
+			} else {
+				redItemBox()
+				document.getElementById("error").innerHTML = "Error: Cannot find item "+"<span style=\"color:blue\">"+item.value+"</span> to remove";
+			}
+		}
+	});
+	document.getElementById("btnDisplay").addEventListener("click", function(){
+		if (list.length > 0) {
+			document.getElementById("display").innerHTML = list+"<br>";
+			document.getElementById("error").innerHTML = "";
+			lightBlueBox();
+		} else {
+			document.getElementById("error").innerHTML = "Error: Your grocery list is blank. Add some items";
+		}
+	});
+
+	document.getElementById("btnPrint").addEventListener("click", function(){
+		if (list.length > 0) {
+			document.getElementById("display").innerHTML = "Here are the items you need to buy: "+groceryList.print();
+			document.getElementById("error").innerHTML = "";
+			lightBlueBox();
+		} else {
+			document.getElementById("error").innerHTML = "Error: Your grocery list is blank. Add some items";
+		}
+	})
+</script>
+<br><br><br><br>
+Comments:
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  /* * * in case my cohort wants to know how to set up
+  1. after getting a disqus account, you will be creating a "short name" (e.g. thisisyourshortname.disqus.com)
+  2. put that name within the quote `...` below in the disqus_shortname variable
+  3. Done! * * */
+  var disqus_shortname = '{{site.disqushandler}}';
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>

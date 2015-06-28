@@ -18,9 +18,7 @@ You can say this is a website that document the journey I go through to become a
 <!-- <a href="http://stackexchange.com/users/XXXXX">
 <img src="http://stackexchange.com/users/flair/XXXX.png?theme=clean" width="208" height="58" alt="profile for NAME HERE on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for NAME HERE on Stack Exchange, a network of free, community-driven Q&amp;A sites">
 </a> -->
-
-
-
+<br><br><br><br>
 Comments:
 
 <div id="disqus_thread"></div>
