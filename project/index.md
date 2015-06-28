@@ -7,7 +7,7 @@ theme: green
 
 Projects page coming soon!
 
-But you are welcome to play my first Javascript game I made recently, <a href="treasure-hunt.html">here</a>.
+But you are welcome to play my first Javascript Treasure Hunt game I made recently, <a href="treasure-hunt.html">here</a> or you can try my <a href="grocery-list/grocery_list.html">simple grocery list</a> using Javascript and DOM manipulation
 <br><br><br><br>
 Comments:
 
