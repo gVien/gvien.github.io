@@ -9,6 +9,7 @@ Welcome to Treasure Hunt game! Here is how to play:
 
 <div style="margin: auto">
 <ol style="text-align: left">
+  <li>Click "Start/Restart Game" button.</li>
 	<li>Use your keyboard arrows or buttons below to move</li>
 	<li>Collect all the gold bullions.</li>
 	<li>Avoid those bombs, you only have 100 HP.</li>
