@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Project
-description: Project of Gai Vien
+description: Projects of Gai Vien
 theme: green
 ---
 
@@ -10,6 +10,8 @@ Below are some of my projects I have worked on during my time at Dev Bootcamp. P
 1. [Simple Grocery List](grocery-list/grocery_list.html) - A basic Javascript web-app grocery list I built during Phase 0 (remote phase of Dev Bootcamp). This was one of my first Javascript web-app.
 
 2. [Treasure-Hunt](treasure-hunt.html) - This was my first Javascript game I made using HTML5/Canvas, CSS, and Javascript/DOM manipulation. The goal of the game is to collect all the gold bullion while avoiding the mines. On top of that, you only have 100 moves to collect all bullions.
+
+3. [Stock-Exchange](finance-exchange) - A web app that provides information of publicly traded company and connects traders/investors.
 
 <br><br><br><br>
 Comments:

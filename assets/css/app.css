@@ -275,3 +275,116 @@ a.orange-link:focus {
 }
 
 .icon-back{background-position:-966px -40px ; width: 48px ; height: 48px;display:inline-block;text-decoration:none}
+
+/*http://fortawesome.github.io/Font-Awesome/icons/*/
+/* for more icons */
+/* Services Styles */
+/*#services{
+    box-shadow: 0 0 50px rgba(0,0,0,0.5);
+}*/
+
+.service-item{
+    text-align:center;
+}
+
+.service-item h3{
+    margin-bottom:10px;
+}
+
+.service-icon{
+    position:relative;
+    display:block;
+    text-align:center;
+    width:100px;
+    height:100px;
+    margin:20px auto 50px;
+    border-radius:50%;
+    font-size:62px;
+    line-height:100px;
+    background:#334959;
+    color:#fff;
+    -webkit-transition:all 0.2s ease-out;
+    transition:all 0.2s ease-out;
+}
+
+.service-icon:after {
+    pointer-events:none;
+    content:"";
+    position:absolute;
+    display:block;
+    width:120px;
+    height:120px;
+    top:-10px;
+    left:-10px;
+    border:3px solid #334959;
+    border-radius:50%;
+    -webkit-transition:all 0.2s ease-out;
+    transition:all 0.2s ease-out;
+}
+
+.no-csstransforms .service-icon:after{
+    display:none;
+}
+
+.service-icon:focus,
+.service-icon:active{
+    color:#fff;
+}
+
+.service-icon [class*=fa]{
+    -webkit-transform:scale(1);
+    transform:rotate(0);
+    -webkit-transition:all 0.3s ease-out;
+    transition:none;
+}
+
+.service-item:hover [class*=fa]{
+    -webkit-transform:scale(1.3);
+    transform:rotate(360deg);
+    -webkit-transition:all 0.5s ease-out;
+    transition:all 0.5s ease-out;
+}
+
+.service-item p{
+    margin: auto;
+    max-width: 250px;
+}
+
+/* Services Colors */
+
+.color1 .service-icon,
+.color1.service-item ul li:nth-child(2):before{
+    background:#00A600;
+}
+
+.color1 .service-icon:after{
+    border:3px solid #00A600;
+}
+
+.color2 .service-icon,
+.color2.service-item ul li:nth-child(2):before{
+    background:#F58026;
+}
+
+.color2 .service-icon:after{
+    border:3px solid #F58026;
+}
+
+.color3 .service-icon,
+.color3.service-item ul li:nth-child(2):before{
+    background:#0077B5;
+}
+
+.color3 .service-icon:after{
+    border:3px solid #0077B5;
+}
+
+/* project style */
+.app-img-resize {
+    max-width: 80%;
+    margin-left: 50px;
+}
+
+.resize {
+    max-width: 100%;
+}
