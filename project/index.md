@@ -5,9 +5,12 @@ description: Project of Gai Vien
 theme: green
 ---
 
-Projects page coming soon!
+Below are some of my projects I have worked on during my time at Dev Bootcamp. Please click on the specific link to find out more about the project.
 
-But you are welcome to play my first Javascript Treasure Hunt game I made recently, <a href="treasure-hunt.html">here</a> or you can try my <a href="grocery-list/grocery_list.html">simple grocery list</a> using Javascript and DOM manipulation
+1. [Simple Grocery List](grocery-list/grocery_list.html) - A basic Javascript web-app grocery list I built during Phase 0 (remote phase of Dev Bootcamp). This was one of my first Javascript web-app.
+
+2. [Treasure-Hunt](treasure-hunt.html) - This was my first Javascript game I made using HTML5/Canvas, CSS, and Javascript/DOM manipulation. The goal of the game is to collect all the gold bullion while avoiding the mines. On top of that, you only have 100 moves to collect all bullions.
+
 <br><br><br><br>
 Comments:
 
