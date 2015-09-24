@@ -29,10 +29,10 @@ theme: green
 
 <!-- Screenshot -->
 <div class="row col-sm-offset-1">
-  <h1 class="header-title">Screenshots</h1>
-  <div class="col-md-4">The search engine for all US public companies: <img class="border resize" src="images/search-box.png"></div>
-  <div class="col-md-4">Searching for a Google Inc... <img class="border resize" src="images/searching-goog.png"></div>
-  <div class="col-md-4">The results of the search: <img class="border resize" src="images/finance-exchange-original.png"></div>
+  <h1 class="header-title">Screenshots<span class="title-reduced-size"> (click the image to enlarge)</span></h1>
+  <div class="col-md-4">The search engine for all US public companies: <a href="images/search-box.png" data-lightbox="screenshot"><img class="border resize" src="images/search-box.png" alt="stock search engine"></a></div>
+  <div class="col-md-4">Searching for a Google Inc... <a href="images/searching-goog.png" data-lightbox="screenshot"><img class="border resize" src="images/searching-goog.png" alt="Searching for Google Inc."></a></div>
+  <div class="col-md-4">The results of the search: <a href="images/finance-exchange-original.png" data-lightbox="screenshot"><img class="border resize" src="images/finance-exchange-original.png" alt="Search results of Birshirk Hathaway Inc."></a></div>
 </div>
 <hr>
 

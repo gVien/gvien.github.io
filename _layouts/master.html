@@ -4,12 +4,12 @@
   <body>
       {% include mobilemenu.html %}
       {{ content }}
-      
-      
-      
+
+
+
 	  {% if page.title == "Home" %}
 		  <script src="/assets/js/MetroJs.min.js"></script>
-		  
+
 		  <script type="text/javascript">
 			$(document).ready(function(){
 				$(".live-tile").liveTile();
@@ -20,6 +20,8 @@
     <!-- {% include analytics.html %} -->
     <a href="#" class="scrollToTop"></a>
 	{% include scroll-up.html %}
+
+  <script src="/assets/js/lightbox.min.js"></script>
   </body>
 </html>
 
