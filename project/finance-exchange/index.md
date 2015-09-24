@@ -44,19 +44,18 @@ theme: green
       <div class="col-sm-4 service-item color3 ">
         <div class="service-icon"><i class="fa fa-lightbulb-o"></i></div>
         <h3>Platform</h3>
-        <p>Web browser and iOS 8</p>
+        <p>Web browser</p>
 
       </div>
       <div class="col-sm-4 service-item color1">
         <div class="service-icon"><i class="fa fa-desktop "></i></div>
         <h3>Front End</h3>
-        <p>Ionic, AngularJS, HTML5, CSS3, Javascript, jQuery </p>
-
+        <p>Javascript, HighCharts, jQuery, AJAX, HTML/CSS</p>
       </div>
       <div class="col-sm-4 service-item color2">
         <div class="service-icon"><i class="fa fa-space-shuttle"></i></div>
         <h3>Back End</h3>
-        <p>Ruby on Rails, PostgreSQL, Auth0, Google+ API, Venmo API</p>
+        <p>Sinatra/Ruby, PostgreSQL, Yahoo Finance API</p>
       </div>
     </div>
   </div>
