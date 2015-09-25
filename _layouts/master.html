@@ -22,6 +22,12 @@
 	{% include scroll-up.html %}
 
   <script src="/assets/js/lightbox.min.js"></script>
+  <!-- this lets user continue to view images after the final one  -->
+  <script>
+    lightbox.option({
+      'wrapAround': true
+    })
+  </script>
   </body>
 </html>
 
