@@ -46,7 +46,7 @@ theme: green
       <h3 class="header-title">ACCOMPLISHMENT</h3>
       <p class="lead">I built a web app that connects traders/investors with anyone who would like to learn more about financial investment.</p>
       <p>The application integrated the stock price data from Yahoo Finance with <a href="http://www.highcharts.com/">Highcharts</a> to create a dynamic <a href="https://en.wikipedia.org/wiki/Candlestick_chart" target="_blank">candlestick chart</a>.</p>
-      <p>I completely style the app without using Bootstrap, because I wanted to get more practice with CSS (for future projects, I will definitely use Bootstrap since styling without bootstrap takes a long time. Note I use Bootstrap to style my personal website!)</p>
+      <p>I completely styled the app without using Bootstrap, because I wanted to get more practice with CSS (for future projects, I will definitely use Bootstrap since styling without bootstrap takes a long time. Note I use Bootstrap to style my personal website!)</p>
       <p>The web app can plot the candle stick chart for any number of data specified in the interval box.</p>
       <p>If we enter the wrong symbol, the app will give us a warning that it is not a valid stock symbol.</p>
     </div>

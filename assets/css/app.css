@@ -402,3 +402,11 @@ a.orange-link:focus {
 .header-title {
     text-decoration: underline;
 }
+
+.chariteer {
+    color: #EC725A;
+}
+
+.center-team {
+    text-align: center
+}

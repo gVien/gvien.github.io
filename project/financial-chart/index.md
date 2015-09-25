@@ -93,10 +93,6 @@ Comments:
 
 <div id="disqus_thread"></div>
 <script type="text/javascript">
-  /* * * in case my cohort wants to know how to set up
-  1. after getting a disqus account, you will be creating a "short name" (e.g. thisisyourshortname.disqus.com)
-  2. put that name within the quote `...` below in the disqus_shortname variable
-  3. Done! * * */
   var disqus_shortname = '{{site.disqushandler}}';
 
   /* * * DON'T EDIT BELOW THIS LINE * * */
