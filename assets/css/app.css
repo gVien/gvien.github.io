@@ -392,3 +392,13 @@ a.orange-link:focus {
 .title-reduced-size {
     font-size: .35em;
 }
+
+.project-divider {
+    border-color: blue;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.header-title {
+    text-decoration: underline;
+}
