@@ -51,7 +51,7 @@ theme: green
 <!-- Screenshot -->
 <div class="container">
   <div class="row">
-    <h3 class="header-title">SCREENSHOTS (click the image to enlarge)</h3>
+    <h3 class="header-title">SCREENSHOTS (click to enlarge)</h3>
     <div class="col-md-4"><a href="images/candlesticks.png" data-lightbox="screenshot"><img class="border resize" src="images/candlesticks.png" alt="Candlestick charts"></a></div>
 
     <div class="col-md-4"><a href="images/search-box.png" data-lightbox="screenshot"><img class="border resize" src="images/search-box.png" alt="stock search engine"></a></div>
