@@ -30,14 +30,14 @@ theme: green
   <div class="row">
     <div class="col-md-6">
       <h3 class="header-title">DEMO</h3>
-      <video width="100%" height="100%" autoplay loop>
+      <video width="100%" height="100%" poster="../../assets/images/demo-video.png" autoplay loop>
         <source src="images/financial-chart-screen-cast.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
       </video>
     </div>
 
     <div class="col-md-6">
-      <h1 class="header-title">ACCOMPLISHMENT</h1>
+      <h3 class="header-title">ACCOMPLISHMENT</h3>
       <p class="lead">I learned <a href="http://d3js.org/" target="_blank">D3.js</a> and used it to build a candlestick chart from the ground up and incorporated this technology with Rails, jQuery, Yahoo Finance API, and AJAX within 3 days.</p>
       <p>We can search for a company name and the auto complete will help us choose the company's stock symbol.</p>
       <p>The web app can plot the candle stick chart for any number of data specified in the period box.</p>
@@ -51,7 +51,7 @@ theme: green
 <!-- Screenshot -->
 <div class="container">
   <div class="row">
-    <h1 class="header-title">SCREENSHOTS<span class="title-reduced-size"> (click the image to enlarge)</span></h1>
+    <h3 class="header-title">SCREENSHOTS (click the image to enlarge)</h3>
     <div class="col-md-4"><a href="images/candlesticks.png" data-lightbox="screenshot"><img class="border resize" src="images/candlesticks.png" alt="Candlestick charts"></a></div>
 
     <div class="col-md-4"><a href="images/search-box.png" data-lightbox="screenshot"><img class="border resize" src="images/search-box.png" alt="stock search engine"></a></div>
@@ -66,7 +66,7 @@ theme: green
 <!-- Technology Used -->
 <section id="services" class="add-padding bg-color-light-gray">
   <div class="container">
-    <h1 class="header-title">TECH USED</h1>
+    <h3 class="header-title">TECH USED</h3>
     <div class="row">
       <div class="col-sm-4 service-item color3 ">
         <div class="service-icon"><i class="fa fa-lightbulb-o"></i></div>
