@@ -15,7 +15,7 @@ Below are some of my projects I have worked on during my time at Dev Bootcamp. P
 
 4. [Financial-Chart](financial-chart) - An extension of Finance-Exchange app that leverages the power of <a href="http://d3js.org/" target="_blank">D3.js</a> and the stock price data from Yahoo Finance API to create <a href="https://en.wikipedia.org/wiki/Candlestick_chart" target="_blank">Candlestick charts</a>. The chart can help technical analysts estimate the future price of a stock.
 
-5. [Chariteer](chariteer) - Chariteer (<span class="chariteer">Chari</span>ty + Volun<span class="chariteer">teer</span>) that connects volunteers with charities to build better communities.
+5. [Chariteer](chariteer) - Chariteer (<span class="chariteer">Chari</span>ty + Volun<span class="chariteer">teer</span>) connects volunteers with charities to build better communities.
 
 More projects are in the work. Even though I graduated from [Dev Bootcamp](http://devbootcamp.com/), the learning has not stopped! I am constantly learning and building new things daily. Please check back often!
 
