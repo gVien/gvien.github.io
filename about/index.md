@@ -11,8 +11,11 @@ I am a former Aerospace/Mechanical Engineer, though I spent many years practicin
 
 [home]: https://gvien.github.io
 
-I left all this behind to become a developer, as I have grown increasingly interest in technology in recent years. I am currently enrolled in Dev Bootcamp for the next several months to study to become a software engineer.
-You can say this is a website that document the journey I go through to become a developer! Take a look at my blog, projects, or you can connect me on <a href="https://twitter.com/GaiVien">twitter</a> or <a href="https://github.com/gVien">Github!</a>
+I left all this behind to become a developer, as I have grown increasingly interested in technology in recent years. I recently graduated from [Dev Bootcamp](http://devbootcamp.com/), a 19-week intensive web development training program that specializes in Javascript, jQuery, Ruby, Sinatra, Rails, HTML5/CSS3, Test-Driven Development, Agile Development, and other frameworks.
+
+I am currently looking for a full-time opportunities. Even though I graduated from the program, my learning has not stalled! I am constantly learning and building new things daily. Please check my [Github](https://github.com/gVien) profile for more open-source projects.
+
+Take a look at my [blog](http://gaivien.com/blog/), [projects](http://gaivien.com/project/), or you can connect me on <a href="https://www.linkedin.com/in/gaivien" target="_blank">LinkedIn</a>, <a href="https://twitter.com/GaiVien" target="_blank">Twitter</a>, and/or <a href="https://github.com/gVien" target="_blank">Github!</a>
 
 <!-- Can also use link below to link to stackexchange -->
 <!-- <a href="http://stackexchange.com/users/XXXXX">
