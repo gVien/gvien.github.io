@@ -80,7 +80,7 @@ theme: green
       <div class="col-sm-4 service-item color1">
         <div class="service-icon"><i class="fa fa-desktop "></i></div>
         <h3>Front End</h3>
-        <p>Javascript, AnguarlarJS, Responsive Grid, Bootstrap, HTML5/CSS3</p>
+        <p>Javascript, AngularJS, Responsive Grid, Bootstrap, HTML5/CSS3</p>
       </div>
       <div class="col-sm-4 service-item color2">
         <div class="service-icon"><i class="fa fa-space-shuttle"></i></div>
