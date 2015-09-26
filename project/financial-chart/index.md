@@ -1,6 +1,6 @@
 ---
 layout: page
-title:
+title: PROJECT
 description: Project - Financial Chart
 theme: green
 ---
