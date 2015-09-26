@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Project
+title: PROJECTS
 description: Projects of Gai Vien
 theme: green
 ---
@@ -17,7 +17,7 @@ Below are some of my projects I have worked on during my time at Dev Bootcamp. P
 
 5. [Chariteer](chariteer) - Chariteer (<span class="chariteer">Chari</span>ty + Volun<span class="chariteer">teer</span>) connects volunteers with charities to build better communities.
 
-More projects are in the work. Even though I graduated from [Dev Bootcamp](http://devbootcamp.com/), the learning has not stopped! I am constantly learning and building new things daily. Please check back often!
+More projects are in the work. Even though I graduated from <a href="http://devbootcamp.com/" target="_blank">Dev Bootcamp</a>, the learning has not stopped! I am constantly learning and building new things daily. Please check back often!
 
 <br><br><br><br>
 Comments:
