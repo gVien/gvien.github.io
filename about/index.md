@@ -1,26 +1,26 @@
 ---
 layout: page
-title: Welcome to my Page!
+title: Welcome!
 description: About Me page of Gai Vien
 theme: mainblue
 ---
 
-Hello there, welcome to my page! Thanks for stopping by.
+Hi there, thanks for dropping by.
 
-I am a former Aerospace/Mechanical Engineer, though I spent many years practicing my Mechanical Engineering credential more than my Aerospace credential. However, I am still a space fan; that's why you see many space pictures in the background of my [home page][home].
+This is Gai Vien’s website about programming, coding, related articles and interesting life events…if I have a “life” to write about. But you know what I mean right. Since I quit my job as a mechanical engineer and joined [Dev Bootcamp](http://devbootcamp.com/) to embark on a journey to become a developer, most of my times have been consumed by learning software engineering fundamentals, building different applications, and collaborating with fellow engineers to create more apps. At one point, I thought I was going to quit and return to my previous position as a Mechanical Engineer. However, as I dwelled deeper into Javascript, jQuery, Ruby, Rails and others frameworks/libraries, something ignited. I was intrigued and thirst for more. Feel free to take a look at some of my projects [here](/project/)
 
-[home]: https://gvien.github.io
+While I just finished Dev Bootcamp in early September, my journey is just starting; I continue to code and explore. I want to create products that would make an impact in people’s lives and inspire the younger generation to spark interest in technology.
 
-I left all this behind to become a developer, as I have grown increasingly interested in technology in recent years. I recently graduated from [Dev Bootcamp](http://devbootcamp.com/), a 19-week intensive web development training program that specializes in Javascript, jQuery, Ruby, Sinatra, Rails, HTML5/CSS3, Test-Driven Development, Agile Development, and other frameworks.
+I am seeking a full-time opportunity, where I can challenge myself to reach my limit, learn new technologies, and help the company solve complex problems. If you are looking for a passionate and self-driven software engineer, please feel free to <a href="mailto: wavetech86@gmail.com">contact me</a>. You can also see my resume [here](/resumes/). I am specialized in the following skills:
 
-I am currently looking for a full-time opportunities. Even though I graduated from the program, my learning has not stalled! I am constantly learning and building new things daily. Please check my [Github](https://github.com/gVien) profile for more open-source projects.
+<strong>Languages</strong>: Javascript, Ruby, HTML5/Canvas/SVG, CSS3
+<strong>Operating Systems</strong>: Mac OSX, Linux (Ubuntu), Windows
+<strong>Frameworks/Libraries</strong>: Ruby on Rails, AngularJS, jQuery, AJAX, D3.js, TDD (Rspec/Jasmine)
+<strong>Databases</strong>: SQlite, PostgreSQL
+<strong>Tools</strong>: Git, Github, Heroku
 
-Take a look at my [blog](http://gaivien.com/blog/), [projects](http://gaivien.com/project/), or you can connect me on <a href="https://www.linkedin.com/in/gaivien" target="_blank">LinkedIn</a>, <a href="https://twitter.com/GaiVien" target="_blank">Twitter</a>, and/or <a href="https://github.com/gVien" target="_blank">Github!</a>
+Feel free to connect with me via <a href="https://www.linkedin.com/in/gaivien" target="_blank">LinkedIn</a> and <a href="https://twitter.com/GaiVien" target="_blank">Twitter</a>. You can also check out my <a href="https://github.com/gVien" target="_blank">Github</a> profile for more open-source projects.
 
-<!-- Can also use link below to link to stackexchange -->
-<!-- <a href="http://stackexchange.com/users/XXXXX">
-<img src="http://stackexchange.com/users/flair/XXXX.png?theme=clean" width="208" height="58" alt="profile for NAME HERE on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for NAME HERE on Stack Exchange, a network of free, community-driven Q&amp;A sites">
-</a> -->
 <br><br><br><br>
 Comments:
 
