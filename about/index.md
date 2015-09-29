@@ -7,17 +7,17 @@ theme: mainblue
 
 Hi there, thanks for dropping by.
 
-This is Gai Vien’s website about programming, coding, related articles and interesting life events…if I have a “life” to write about. But you know what I mean right. Since I quit my job as a mechanical engineer and joined [Dev Bootcamp](http://devbootcamp.com/) to embark on a journey to become a developer, most of my times have been consumed by learning software engineering fundamentals, building different applications, and collaborating with fellow engineers to create more apps. At one point, I thought I was going to quit and return to my previous position as a Mechanical Engineer. However, as I dwelled deeper into Javascript, jQuery, Ruby, Rails and others frameworks/libraries, something ignited. I was intrigued and thirst for more. Feel free to take a look at some of my projects [here](/project/)
+This is Gai Vien’s website about programming, coding, related articles and interesting life events…if I have a “life” to write about. But you know what I mean right. Since I quit my job as a mechanical engineer and joined <a href="http://devbootcamp.com/">Dev Bootcamp</a> to embark on a journey to become a developer, most of my times have been consumed by learning software engineering fundamentals, building different applications, and collaborating with fellow engineers to create more apps. At one point, I thought I was going to quit and return to my previous position as a Mechanical Engineer. However, as I dwelled deeper into Javascript, jQuery, Ruby, Rails and others frameworks/libraries, something ignited. I was intrigued and thirst for more. Feel free to take a look at some of my projects [here](/project/).
 
 While I just finished Dev Bootcamp in early September, my journey is just starting; I continue to code and explore. I want to create products that would make an impact in people’s lives and inspire the younger generation to spark interest in technology.
 
 I am seeking a full-time opportunity, where I can challenge myself to reach my limit, learn new technologies, and help the company solve complex problems. If you are looking for a passionate and self-driven software engineer, please feel free to <a href="mailto: wavetech86@gmail.com">contact me</a>. You can also see my resume [here](/resumes/). I am specialized in the following skills:
 
-<strong>Languages</strong>: Javascript, Ruby, HTML5/Canvas/SVG, CSS3
-<strong>Operating Systems</strong>: Mac OSX, Linux (Ubuntu), Windows
-<strong>Frameworks/Libraries</strong>: Ruby on Rails, AngularJS, jQuery, AJAX, D3.js, TDD (Rspec/Jasmine)
-<strong>Databases</strong>: SQlite, PostgreSQL
-<strong>Tools</strong>: Git, Github, Heroku
+<strong>Languages</strong>: Javascript, Ruby, HTML5/Canvas/SVG, CSS3<br>
+<strong>Operating Systems</strong>: Mac OSX, Linux (Ubuntu), Windows<br>
+<strong>Frameworks/Libraries</strong>: Ruby on Rails, AngularJS, jQuery, AJAX, D3.js, TDD (Rspec/Jasmine)<br>
+<strong>Databases</strong>: SQlite, PostgreSQL<br>
+<strong>Tools</strong>: Git, Github, Heroku<br>
 
 Feel free to connect with me via <a href="https://www.linkedin.com/in/gaivien" target="_blank">LinkedIn</a> and <a href="https://twitter.com/GaiVien" target="_blank">Twitter</a>. You can also check out my <a href="https://github.com/gVien" target="_blank">Github</a> profile for more open-source projects.
 
