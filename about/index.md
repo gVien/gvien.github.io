@@ -11,13 +11,7 @@ This is Gai Vien’s website about programming, coding, related articles and int
 
 While I just completed Dev Bootcamp program in early September, my journey is just starting; I continue to code and explore. I want to create products that would make an impact in people’s lives and inspire the younger generation to spark interest in technology. Feel free to take a look at some of my projects [here](/project/).
 
-Currently, I am seeking a full-time opportunity, where I can continue to challenge myself, learn new technologies, and help the company solve complex problems. If you are looking for a passionate and self-driven software engineer, please feel free to <a href="mailto: wavetech86@gmail.com">contact me</a>. You can also see my resume [here](/resumes/). I am specialized in the following skills:
-
-<strong>Languages</strong>: Javascript, Ruby, HTML5/Canvas/SVG, CSS3<br>
-<strong>Operating Systems</strong>: Mac OSX, Linux (Ubuntu), Windows<br>
-<strong>Frameworks/Libraries</strong>: Ruby on Rails, AngularJS, jQuery, AJAX, D3.js, TDD (Rspec/Jasmine)<br>
-<strong>Databases</strong>: SQlite, PostgreSQL<br>
-<strong>Tools</strong>: Git, Github, Heroku<br>
+Currently, I am seeking a full-time opportunity, where I can continue to challenge myself, learn new technologies, and help the company solve complex problems. If you are looking for a passionate and self-driven software engineer, please feel free to <a href="mailto: wavetech86@gmail.com">contact me</a>. You can also see my resume [here](/resumes/).
 
 Feel free to connect with me via <a href="https://www.linkedin.com/in/gaivien" target="_blank">LinkedIn</a> and <a href="https://twitter.com/GaiVien" target="_blank">Twitter</a>. You can also check out my <a href="https://github.com/gVien" target="_blank">Github</a> profile for more open-source projects.
 
