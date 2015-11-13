@@ -5,19 +5,16 @@ description: Projects of Gai Vien
 theme: green
 ---
 
-Below are some of my projects I have worked on during my time at Dev Bootcamp. Please click on the specific link to find out more about the project.
+Please click on the specific link to find out more about the project.
 
-1. [Simple Grocery List](grocery-list/grocery_list.html) - A basic Javascript web-app grocery list I built during Phase 0 (remote phase of Dev Bootcamp). This was one of my first Javascript web-apps.
+1. [Stock-Exchange](finance-exchange) - A web app that provides information of publicly traded company and connects traders/investors.
 
-2. [Treasure-Hunt](treasure-hunt.html) - This was my first Javascript game I made using HTML5/Canvas, CSS, and Javascript/DOM manipulation. The goal of the game is to collect all the gold bullions while avoiding the mines. On top of that, you only have 100 moves to collect all bullions.
+2. [Financial-Chart](financial-chart) - An extension of Finance-Exchange app that leverages the power of <a href="http://d3js.org/" target="_blank">D3.js</a> and the stock price data from Yahoo Finance API to create <a href="https://en.wikipedia.org/wiki/Candlestick_chart" target="_blank">Candlestick charts</a>. The chart can help technical analysts estimate the future price of a stock.
 
-3. [Stock-Exchange](finance-exchange) - A web app that provides information of publicly traded company and connects traders/investors.
+3. [Chariteer](chariteer) - Chariteer (<span class="chariteer">Chari</span>ty + Volun<span class="chariteer">teer</span>) connects volunteers with charities to build better communities.
 
-4. [Financial-Chart](financial-chart) - An extension of Finance-Exchange app that leverages the power of <a href="http://d3js.org/" target="_blank">D3.js</a> and the stock price data from Yahoo Finance API to create <a href="https://en.wikipedia.org/wiki/Candlestick_chart" target="_blank">Candlestick charts</a>. The chart can help technical analysts estimate the future price of a stock.
+4. PaperTrading (Coming soon, est. beta launch around 11/17/2015) - When major events, such as the <a href="http://money.cnn.com/2014/10/15/investing/ebola-spooks-wall-street-investors-stocks/" target="_blank">Ebola epidemic in 2014</a> or <a href="http://www.economist.com/news/business-and-finance/21662092-china-sneezing-rest-world-rightly-nervous-causes-and-consequences-chinas" target="_blank">Chinese Stock Market Crash in 2015</a>, crash the US financial market, people are scared to pour their hard earned money in a brokerage firm to invest in the stock market. PaperTrading obliterates this fear by giving people the opportunity to hone their trading skills with virtual trading platform using real market data. Any trading loss will not dent their wallet or cause them to loss sleep but any wins will boost their confidence level and make them feel they can beat the market again. With improved skills, people can start investing and beating the financial market again.
 
-5. [Chariteer](chariteer) - Chariteer (<span class="chariteer">Chari</span>ty + Volun<span class="chariteer">teer</span>) connects volunteers with charities to build better communities.
-
-More projects are in the work. Even though I graduated from <a href="http://devbootcamp.com/" target="_blank">Dev Bootcamp</a>, the learning has not stopped! I am constantly learning and building new things daily. Please check back often!
 
 <br><br><br><br>
 Comments:
