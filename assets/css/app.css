@@ -387,6 +387,7 @@ a.orange-link:focus {
 
 .resize {
     max-width: 100%;
+    margin-bottom: 10px;
 }
 
 .title-reduced-size {
