@@ -411,3 +411,23 @@ a.orange-link:focus {
 .center-team {
     text-align: center
 }
+
+.center {
+    position: relative;
+    left: 50%;
+    -ms-transform: translateX(-33%);
+    -webkit-transform: translateX(-33%);
+    -moz-transform: translateX(-33%);
+    -o-transform: translateX(-33%);
+    transform: translateX(-33%);
+}
+
+@media (max-width: 991px) {
+    .center {
+        -ms-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+}
