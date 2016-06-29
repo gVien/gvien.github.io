@@ -1,19 +1,17 @@
 ---
 layout: page
-title: Welcome!
+title: Welcome Gai's Page!
 description: About Me page of Gai Vien
 theme: mainblue
 ---
 
-Hi there, thanks for dropping by.
+Hi there, thanks for dropping by and welcome!
 
-This is Gai Vien’s website about programming, coding, related articles and interesting life events…if I have a “life” to write about. But you know what I mean, right? Since I quit my job as a mechanical engineer and joined <a href="http://devbootcamp.com/" target="_blank">Dev Bootcamp</a>, most of my times have been consumed by learning software engineering fundamentals, building different applications, and collaborating with fellow engineers to create more apps. At one point, I thought I was going to quit. However, as I persevered and dived deeper into Javascript, jQuery, Ruby, Rails and other frameworks/libraries, something ignited. I was intrigued and thirst for more.
-
-While I just completed Dev Bootcamp program in early September, my journey is just starting; I continue to code and explore. I want to create products that would make an impact in people’s lives and inspire the younger generation to spark interest in technology. Feel free to take a look at some of my projects [here](/project/).
+My name is Gai Vien and I am software developer. Prior to being a developer, I was a mechanical/manufacturing engineer. I started doing software development on my own for a while before committing myself to attending a bootcamp in San Francisco to further improve my skills. I recently contracted with Beepi to rebuild and rebrand some of their pages such as financing, leasing, blog, career, etc.
 
 Currently, I am seeking a full-time opportunity, where I can continue to challenge myself, learn new technologies, and help the company solve complex problems. If you are looking for a passionate and self-driven software engineer, please feel free to <a href="mailto: wavetech86@gmail.com">contact me</a>. You can also see my resume [here](/resume/).
 
-Feel free to connect with me via <a href="https://www.linkedin.com/in/gaivien" target="_blank">LinkedIn</a> and <a href="https://twitter.com/GaiVien" target="_blank">Twitter</a>. You can also check out my <a href="https://github.com/gVien" target="_blank">Github</a> profile for more open-source projects.
+Feel free to connect with me via <a href="https://www.linkedin.com/in/gaivien" target="_blank">LinkedIn</a>. You can also check out my <a href="https://github.com/gVien" target="_blank">Github</a> profile for sample of my codes. I also share my knowledge through blogging, so check out my blog section [here](/blog/).
 
 <br><br><br><br>
 Comments:
