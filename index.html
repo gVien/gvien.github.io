@@ -54,7 +54,8 @@ description: Welcome to My Page!
 		<div class="row">
 
 			<div class="col-md-4 col-sm-6 col-xs-12">
-				{% for post in site.posts offset:1 limit:1 %}
+				{% for post in site.posts limit:1 %}
+				<!-- add offset:1 between posts and limit -->
 				<a href="{{post.url}}">
 					<div class="tile green bord">
 						<h3 class="title">Recent Article</h3>

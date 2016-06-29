@@ -5,7 +5,7 @@ description: Page with links to all old articles of the blog
 theme: darkblue
 ---
 
-<!-- 
+<!--
 Note that the `technical` configuration is added to each post of blog to determine if it is technical (true) or cultural (false).
 For some reasons, the categories don't work well with the `if` statement below (e.g. if post.categories == "Cultural"). It would
 not populate the page with links. I think it might be used for other things so `post.categories` might be returning something other
@@ -16,36 +16,14 @@ Anyway, adding `technical` and assigning it true or false works well here. I can
     <ul>
       {% for post in site.posts %}
         {% unless post.next %}
-          <h3>{{ post.date | date: '%Y' }} - TECHNICAL</h3>
+          <h3>Blogs in {{ post.date | date: '%Y' }}</h3>
         {% else %}
           {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
           {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
           {% if year != nyear %}
-            <h3>{{ post.date | date: '%Y' }} - TECHNICAL</h3</h3>
+            <h3>Blogs in {{ post.date | date: '%Y' }}</h3</h3>
           {% endif %}
         {% endunless %}
-        <!-- divide between technical and cultural blogs -->
-        {% if post.technical %}
           <li class="alink"><a href="{{ post.url }}" class="green-link">{{ post.date | date: "%B %d, %Y" }} - {{ post.title }}</a></li>
-          {% endif %}
       {% endfor %}
     </ul>
-
-    <ul>
-      {% for post in site.posts %}
-        {% unless post.next %}
-          <h3>{{ post.date | date: '%Y' }} - CULTURAL</h3>
-        {% else %}
-          {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-          {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-          {% if year != nyear %}
-            <h3>{{ post.date | date: '%Y' }} - CULTURAL</h3>
-          {% endif %}
-        {% endunless %}
-        <!-- divide between technical and cultural blogs -->
-        {% if post.technical == false %}
-          <li class="alink"><a href="{{ post.url }}" class="green-link">{{ post.date | date: "%B %d, %Y" }} - {{ post.title }}</a></li>
-          {% endif %}
-      {% endfor %}
-    </ul>
-    
