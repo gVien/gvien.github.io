@@ -32,7 +32,7 @@
     position: fixed;
     top: 0px;
     bottom: 0;
-    left: 0;
+    /*left: 0;*/
     z-index: 1000;
     display: block;
     padding-right: 0;
@@ -430,4 +430,52 @@ a.orange-link:focus {
         -o-transform: translateX(-50%);
         transform: translateX(-50%);
     }
+}
+
+/* css for re-design of pages */
+.wrapper {
+    max-width: 1100px;
+    /*width: 100%; */
+    margin-bottom: -5px;
+    min-height: 100vh;
+}
+
+.main-content {
+    margin-left: 200px;
+}
+
+@media (max-width: 767px) {
+    .main-content {
+        margin-left: 0;
+    }
+}
+
+.gray-background {
+    background-color: #f5f8fa;
+}
+
+.wrapper.white-background {
+    background-color: white;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+
+/*footer {
+    display: inline-block;
+    width: 100%;
+    z-index: 2000;
+}*/
+
+footer .white-background {
+    background-color: white;
+}
+
+/*.behind-footer {
+    z-index: -1;
+    margin-bottom: 130px;
+    width: 200px;
+}*/
+
+.equal-width {
+    width: 200px;
 }
